@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MDM एवं पन्नाधाय दुग्ध योजना सम्पूर्ण मासिक UC पोर्टल</title>
+  <title>MDM एवं पन्नाधाय दुग्ध योजना सम्पूर्ण मासिक UC पोर्टल - अनूपगढ़</title>
   <style>
     * { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
     body { background: #0f172a; color: #f8fafc; padding: 14px; min-height: 100vh; }
-    .container { max-width: 980px; margin: 0 auto; }
+    .container { max-width: 1020px; margin: 0 auto; }
 
     .header-card { background: #1e293b; border-radius: 12px; padding: 18px; margin-bottom: 16px; border: 1px solid #334155; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
-    h1 { font-size: 20px; color: #38bdf8; text-align: center; margin-bottom: 6px; }
+    h1 { font-size: 19px; color: #38bdf8; text-align: center; margin-bottom: 4px; }
     p.sub-title { font-size: 13px; color: #94a3b8; text-align: center; margin-bottom: 16px; }
 
-    .section-label { font-size: 14px; color: #38bdf8; font-weight: bold; margin-top: 12px; margin-bottom: 8px; border-bottom: 1px dashed #334155; padding-bottom: 4px; }
-    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 10px; }
+    .section-label { font-size: 13.5px; color: #38bdf8; font-weight: bold; margin-top: 14px; margin-bottom: 8px; border-bottom: 1px dashed #334155; padding-bottom: 4px; }
+    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 10px; }
     .form-group { display: flex; flex-direction: column; }
-    label { font-size: 12px; color: #cbd5e1; margin-bottom: 4px; font-weight: 500; }
-    input, select { padding: 8px 10px; background: #0f172a; border: 1px solid #475569; border-radius: 6px; color: #fff; font-size: 13px; outline: none; }
+    label { font-size: 11.5px; color: #cbd5e1; margin-bottom: 4px; font-weight: 500; }
+    input, select { padding: 7px 9px; background: #0f172a; border: 1px solid #475569; border-radius: 6px; color: #fff; font-size: 12.5px; outline: none; }
     input:focus, select:focus { border-color: #38bdf8; }
 
     .btn-row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
@@ -27,33 +27,33 @@
     .btn-print { background: #8b5cf6; color: #fff; }
 
     .table-card { background: #1e293b; border-radius: 12px; padding: 14px; margin-bottom: 16px; border: 1px solid #334155; overflow-x: auto; }
-    .table-title { font-size: 15px; color: #38bdf8; margin-bottom: 10px; font-weight: bold; }
+    .table-title { font-size: 14.5px; color: #38bdf8; margin-bottom: 10px; font-weight: bold; }
 
-    table.input-table { width: 100%; border-collapse: collapse; min-width: 600px; }
-    table.input-table th, table.input-table td { padding: 7px 8px; text-align: center; border: 1px solid #334155; font-size: 13px; }
+    table.input-table { width: 100%; border-collapse: collapse; min-width: 650px; }
+    table.input-table th, table.input-table td { padding: 6px 7px; text-align: center; border: 1px solid #334155; font-size: 12.5px; }
     table.input-table th { background: #0f172a; color: #38bdf8; }
     table.input-table tr.sunday-row { background: rgba(239, 68, 68, 0.12); color: #f87171; }
     table.input-table tr.rice-row { background: rgba(56, 189, 248, 0.08); }
-    table.input-table input.num-in { width: 75px; text-align: center; padding: 5px; background: #0f172a; border: 1px solid #475569; border-radius: 4px; color: #fff; }
+    table.input-table input.num-in { width: 65px; text-align: center; padding: 4px; background: #0f172a; border: 1px solid #475569; border-radius: 4px; color: #fff; }
     table.input-table input:disabled { background: #1e293b; border-color: #334155; color: #64748b; cursor: not-allowed; }
 
     /* Screen Preview Styles */
     #ucContainer { display: none; }
     .screen-preview { background: #ffffff; color: #000; border-radius: 8px; padding: 16px; margin-top: 16px; }
     .screen-preview .uc-page { background: #fff; color: #000; padding: 16px; border: 1px solid #cbd5e1; margin-bottom: 16px; border-radius: 6px; }
-    .screen-preview .uc-header { text-align: center; margin-bottom: 10px; border-bottom: 2px solid #000; padding-bottom: 4px; }
-    .screen-preview table.uc-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
-    .screen-preview table.uc-table th, .screen-preview table.uc-table td { border: 1px solid #000; padding: 4px 6px; font-size: 11px; text-align: center; }
+    .screen-preview .uc-header { text-align: center; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; }
+    .screen-preview table.uc-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+    .screen-preview table.uc-table th, .screen-preview table.uc-table td { border: 1px solid #000; padding: 3px 5px; font-size: 10px; text-align: center; }
     .screen-preview table.uc-table th { background: #f8fafc; font-weight: bold; }
-    .screen-preview .signature-row { display: flex; justify-content: space-between; margin-top: 30px; font-size: 11px; font-weight: bold; }
-    .screen-preview .sign-box { text-align: center; width: 180px; border-top: 1px solid #000; padding-top: 4px; }
-    .screen-preview .school-meta { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 12px; font-weight: bold; flex-wrap: wrap; gap: 6px; }
+    .screen-preview .signature-row { display: flex; justify-content: space-between; margin-top: 25px; font-size: 10.5px; font-weight: bold; }
+    .screen-preview .sign-box { text-align: center; width: 190px; border-top: 1px solid #000; padding-top: 4px; }
+    .screen-preview .school-meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-bottom: 6px; font-size: 10.5px; font-weight: 500; }
 
     /* Exact 2 Pages Print CSS */
     @media print {
       @page {
         size: A4 portrait;
-        margin: 8mm 12mm;
+        margin: 6mm 8mm;
       }
       body { background: #fff !important; color: #000 !important; padding: 0 !important; }
       .header-card, .table-card, .btn-row, .no-print, #screenUcWrapper { display: none !important; }
@@ -76,45 +76,63 @@
         break-after: avoid;
       }
 
-      .uc-header { text-align: center; margin-bottom: 6px; border-bottom: 2px solid #000; padding-bottom: 3px; }
-      .uc-header h2 { font-size: 15px; margin-bottom: 2px; color: #000; }
-      .uc-header h3 { font-size: 12px; font-weight: normal; color: #000; }
-      .school-meta { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px; font-weight: bold; flex-wrap: wrap; }
+      .uc-header { text-align: center; margin-bottom: 4px; border-bottom: 1.5px solid #000; padding-bottom: 2px; }
+      .uc-header h2 { font-size: 13.5px; margin-bottom: 1px; color: #000; font-weight: bold; }
+      .uc-header h3 { font-size: 11px; font-weight: normal; color: #000; }
+      .school-meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 6px; margin-bottom: 4px; font-size: 9.5px; font-weight: 500; border-bottom: 1px solid #000; padding-bottom: 3px; }
 
-      table.uc-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
-      table.uc-table th, table.uc-table td { border: 1px solid #000; padding: 3px 5px; font-size: 10.5px; text-align: center; color: #000; }
+      table.uc-table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+      table.uc-table th, table.uc-table td { border: 1px solid #000; padding: 2px 3.5px; font-size: 9px; text-align: center; color: #000; line-height: 1.15; }
       table.uc-table th { background: #f1f5f9; font-weight: bold; }
       table.uc-table td.text-left { text-align: left; }
 
-      .signature-row { display: flex; justify-content: space-between; margin-top: 32px; font-size: 11px; font-weight: bold; }
-      .sign-box { text-align: center; width: 190px; border-top: 1px solid #000; padding-top: 4px; }
+      .signature-row { display: flex; justify-content: space-between; margin-top: 20px; font-size: 9.5px; font-weight: bold; }
+      .sign-box { text-align: center; width: 190px; border-top: 1px solid #000; padding-top: 2px; }
+      .note-text { font-size: 8.5px; margin-top: 3px; font-style: italic; }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <!-- Header Configuration -->
+    <!-- Header Configuration Card -->
     <div class="header-card no-print">
       <h1>MDM एवं पन्नाधाय दुग्ध योजना सम्पूर्ण मासिक UC पोर्टल</h1>
-      <p class="sub-title">खाद्यान्न + कुकिंग दरें + चीनी व गैस सिलेंडर मद (भौतिक/वित्तीय) सम्पूर्ण समाधान</p>
+      <p class="sub-title">अनूपगढ़ ब्लॉक - नवीन सत्र 2026-27 प्रारूप</p>
 
+      <!-- 1. School Information -->
+      <div class="section-label">1. विद्यालय एवं बैंक विवरण</div>
       <div class="form-grid">
+        <div class="form-group">
+          <label>शैक्षणिक सत्र (Session):</label>
+          <input type="text" id="sessionName" value="2026-27" placeholder="उदा. 2026-27">
+        </div>
         <div class="form-group">
           <label>विद्यालय का नाम:</label>
           <input type="text" id="schoolName" placeholder="राउप्रावि / रामावि का नाम">
         </div>
         <div class="form-group">
-          <label>PEEO / ब्लॉक का नाम:</label>
-          <input type="text" id="peeoBlock" placeholder="PEEO परिक्षेत्र / ब्लॉक">
+          <label>ब्लॉक का नाम:</label>
+          <input type="text" id="blockName" value="अनूपगढ़">
+        </div>
+        <div class="form-group">
+          <label>PEEO / ग्रा.पं. का नाम:</label>
+          <input type="text" id="peeoName" placeholder="PEEO का नाम">
         </div>
         <div class="form-group">
           <label>UDISE कोड:</label>
           <input type="text" id="udiseCode" placeholder="11 अंकीय कोड">
         </div>
         <div class="form-group">
+          <label>जावक क्रमांक / दिनांक:</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="dispatchNo" placeholder="क्रमांक" style="width:50%;">
+            <input type="text" id="dispatchDate" placeholder="दिनांक" style="width:50%;">
+          </div>
+        </div>
+        <div class="form-group">
           <label>माह एवं वर्ष:</label>
-          <div style="display:flex; gap:6px;">
+          <div style="display:flex; gap:4px;">
             <select id="monthSelect">
               <option value="0">जनवरी</option>
               <option value="1">फरवरी</option>
@@ -129,125 +147,164 @@
               <option value="10">नवम्बर</option>
               <option value="11">दिसम्बर</option>
             </select>
-            <input type="number" id="yearSelect" value="2026" style="width:85px;">
+            <input type="number" id="yearSelect" value="2026" style="width:75px;">
           </div>
         </div>
         <div class="form-group">
-          <label>कार्यरत कुक-कम-हेल्पर संख्या:</label>
-          <input type="number" id="cookCount" value="1" min="1" max="10">
+          <label>संस्था प्रधान नाम व मो.:</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="headName" placeholder="नाम" style="width:55%;">
+            <input type="text" id="headMobile" placeholder="मोबाइल" style="width:45%;">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>पोषाहार प्रभारी नाम व मो.:</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="inchargeName" placeholder="नाम" style="width:55%;">
+            <input type="text" id="inchargeMobile" placeholder="मोबाइल" style="width:45%;">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>पीईईओ मोबाइल नं.:</label>
+          <input type="text" id="peeoMobile" placeholder="PEEO मोबाइल नंबर">
+        </div>
+      </div>
+
+      <!-- Bank Details -->
+      <div class="form-grid">
+        <div class="form-group">
+          <label>बैंक का नाम मय शाखा:</label>
+          <input type="text" id="bankName" placeholder="उदा. PNB / SBI शाखा">
+        </div>
+        <div class="form-group">
+          <label>आई.एफ.एस.सी. कोड:</label>
+          <input type="text" id="ifscCode" placeholder="IFSC कोड">
+        </div>
+        <div class="form-group">
+          <label>खाता संख्या:</label>
+          <input type="text" id="accountNo" placeholder="बैंक खाता संख्या">
+        </div>
+        <div class="form-group">
+          <label>नामांकन (बाल वाटिका / 1-5 / 6-8):</label>
+          <div style="display:flex; gap:4px;">
+            <input type="number" id="enrBv" placeholder="BV" title="बाल वाटिका" value="0">
+            <input type="number" id="enr15" placeholder="1-5" title="कक्षा 1-5" value="0">
+            <input type="number" id="enr68" placeholder="6-8" title="कक्षा 6-8" value="0">
+          </div>
         </div>
       </div>
 
       <!-- Configurable Rates -->
-      <div class="section-label">कुकिंग कन्वर्जन दरें (सरकारी निर्देशानुसार संपादन योग्य)</div>
+      <div class="section-label">कुकिंग कन्वर्जन दरें (नवीन प्रारूप अनुसार संपादन योग्य)</div>
       <div class="form-grid">
         <div class="form-group">
-          <label>प्राथमिक दर (1-5) ₹ प्रति छात्र/दिन:</label>
-          <input type="number" id="rateCook15" value="5.45" step="0.01" style="border-color:#38bdf8;">
+          <label>बाल वाटिका दर (₹ प्रति छात्र):</label>
+          <input type="number" id="rateCookBv" value="6.78" step="0.01" style="border-color:#38bdf8;">
         </div>
         <div class="form-group">
-          <label>उच्च प्राथमिक दर (6-8) ₹ प्रति छात्र/दिन:</label>
-          <input type="number" id="rateCook68" value="8.17" step="0.01" style="border-color:#38bdf8;">
+          <label>प्राथमिक (1-5) दर (₹ प्रति छात्र):</label>
+          <input type="number" id="rateCook15" value="6.78" step="0.01" style="border-color:#38bdf8;">
+        </div>
+        <div class="form-group">
+          <label>उच्च प्राथमिक (6-8) दर (₹ प्रति छात्र):</label>
+          <input type="number" id="rateCook68" value="10.17" step="0.01" style="border-color:#38bdf8;">
         </div>
       </div>
 
-      <!-- 1. Opening Balance -->
-      <div class="section-label">1. प्रारंभिक शेष (Opening Balance - भौतिक व वित्तीय)</div>
+      <!-- Cook-cum-Helpers Details -->
+      <div class="section-label">कुक कम हेल्पर विवरण (अधिकतम 3 कुक)</div>
       <div class="form-grid">
         <div class="form-group">
-          <label>गेहूं प्रारंभिक (Kg):</label>
-          <input type="number" id="openWheat" value="0" step="0.1">
+          <label>कुक 1 (नाम / लिंग / मानदेय):</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="cookName1" placeholder="नाम" style="width:50%;">
+            <select id="cookGender1" style="width:25%;"><option>महिला</option><option>पुरुष</option></select>
+            <input type="number" id="cookPay1" value="2467" style="width:25%;">
+          </div>
         </div>
         <div class="form-group">
-          <label>चावल प्रारंभिक (Kg):</label>
-          <input type="number" id="openRice" value="0" step="0.1">
+          <label>कुक 2 (नाम / लिंग / मानदेय):</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="cookName2" placeholder="नाम (यदि हो)" style="width:50%;">
+            <select id="cookGender2" style="width:25%;"><option>महिला</option><option>पुरुष</option></select>
+            <input type="number" id="cookPay2" value="0" style="width:25%;">
+          </div>
         </div>
         <div class="form-group">
-          <label>कुकिंग राशि प्रारंभिक (₹):</label>
-          <input type="number" id="openCooking" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>कुक मानदेय प्रारंभिक (₹):</label>
-          <input type="number" id="openCookHonor" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>दूध पाउडर प्रारंभिक (Kg):</label>
-          <input type="number" id="openMilk" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>चीनी स्टॉक प्रारंभिक (Kg):</label>
-          <input type="number" id="openSugar" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>चीनी राशि प्रारंभिक (₹):</label>
-          <input type="number" id="openSugarCash" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>गैस सिलेंडर राशि प्रारंभिक (₹):</label>
-          <input type="number" id="openGasCash" value="0" step="0.01">
+          <label>कुक 3 (नाम / लिंग / मानदेय):</label>
+          <div style="display:flex; gap:4px;">
+            <input type="text" id="cookName3" placeholder="नाम (यदि हो)" style="width:50%;">
+            <select id="cookGender3" style="width:25%;"><option>महिला</option><option>पुरुष</option></select>
+            <input type="number" id="cookPay3" value="0" style="width:25%;">
+          </div>
         </div>
       </div>
 
-      <!-- 2. Received in Month -->
-      <div class="section-label">2. माह में प्राप्त आवंटन (Received in Month)</div>
+      <!-- 2. Opening Balances -->
+      <div class="section-label">2. प्रारंभिक शेष (Opening Balances - पिछले माह से स्वतः आयातित / संपादन योग्य)</div>
       <div class="form-grid">
-        <div class="form-group">
-          <label>प्राप्त गेहूं (Kg):</label>
-          <input type="number" id="rcvWheat" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त चावल (Kg):</label>
-          <input type="number" id="rcvRice" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त कुकिंग राशि (₹):</label>
-          <input type="number" id="rcvCooking" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त कुक मानदेय (₹):</label>
-          <input type="number" id="rcvCookHonor" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त दूध पाउडर (Kg):</label>
-          <input type="number" id="rcvMilk" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त चीनी स्टॉक (Kg):</label>
-          <input type="number" id="rcvSugar" value="0" step="0.1">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त चीनी राशि (₹):</label>
-          <input type="number" id="rcvSugarCash" value="0" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>प्राप्त गैस सिलेंडर राशि (₹):</label>
-          <input type="number" id="rcvGasCash" value="0" step="0.01">
-        </div>
+        <div class="form-group"><label>गेहूं प्रारंभिक BV (Kg):</label><input type="number" id="openWheatBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>गेहूं प्रारंभिक 1-5 (Kg):</label><input type="number" id="openWheat15" value="0" step="0.1"></div>
+        <div class="form-group"><label>गेहूं प्रारंभिक 6-8 (Kg):</label><input type="number" id="openWheat68" value="0" step="0.1"></div>
+        <div class="form-group"><label>चावल प्रारंभिक BV (Kg):</label><input type="number" id="openRiceBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>चावल प्रारंभिक 1-5 (Kg):</label><input type="number" id="openRice15" value="0" step="0.1"></div>
+        <div class="form-group"><label>चावल प्रारंभिक 6-8 (Kg):</label><input type="number" id="openRice68" value="0" step="0.1"></div>
+        
+        <div class="form-group"><label>कुकिंग राशि प्रा० BV (₹):</label><input type="number" id="openCookBv" value="0" step="0.01"></div>
+        <div class="form-group"><label>कुकिंग राशि प्रा० 1-5 (₹):</label><input type="number" id="openCook15" value="0" step="0.01"></div>
+        <div class="form-group"><label>कुकिंग राशि प्रा० 6-8 (₹):</label><input type="number" id="openCook68" value="0" step="0.01"></div>
+        
+        <div class="form-group"><label>दूध पाउडर प्रा० BV (Kg):</label><input type="number" id="openMilkBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>दूध पाउडर प्रा० 1-5 (Kg):</label><input type="number" id="openMilk15" value="0" step="0.1"></div>
+        <div class="form-group"><label>दूध पाउडर प्रा० 6-8 (Kg):</label><input type="number" id="openMilk68" value="0" step="0.1"></div>
+
+        <div class="form-group"><label>चीनी स्टॉक प्रा० BV (Kg):</label><input type="number" id="openSugarBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>चीनी स्टॉक प्रा० 1-5 (Kg):</label><input type="number" id="openSugar15" value="0" step="0.1"></div>
+        <div class="form-group"><label>चीनी स्टॉक प्रा० 6-8 (Kg):</label><input type="number" id="openSugar68" value="0" step="0.1"></div>
+
+        <div class="form-group"><label>MDM कुक मानदेय प्रा० (₹):</label><input type="number" id="openCookHonor" value="0" step="0.01"></div>
+        <div class="form-group"><label>दुग्ध कुक मानदेय प्रा० (₹):</label><input type="number" id="openMilkHelperCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>चीनी राशि प्रारंभिक (₹):</label><input type="number" id="openSugarCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>गैस सिलेंडर प्रा० शेष (₹):</label><input type="number" id="openGasCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>MME राशि प्रा० शेष (₹):</label><input type="number" id="openMmeCash" value="0" step="0.01"></div>
       </div>
 
-      <!-- 3. Actual Expenditures & Consumption (Editable) -->
-      <div class="section-label">3. माह में वास्तविक व्यय एवं उपभोग (संपादन योग्य - आवश्यकतानुसार भरें)</div>
+      <!-- 3. Received in Month -->
+      <div class="section-label">3. माह में प्राप्त आवंटन (Received in Month)</div>
       <div class="form-grid">
-        <div class="form-group">
-          <label>MDM कुक वास्तविक भुगतान (₹):</label>
-          <input type="number" id="actualCookSpend" value="2467" step="0.01" style="border-color:#38bdf8;">
-        </div>
-        <div class="form-group">
-          <label>दूध योजना कुक वास्तविक भुगतान (₹):</label>
-          <input type="number" id="actualMilkSpend" value="500" step="0.01" style="border-color:#38bdf8;">
-        </div>
-        <div class="form-group">
-          <label>चीनी क्रय वास्तविक व्यय राशि (₹):</label>
-          <input type="number" id="actualSugarSpend" value="0" step="0.01" style="border-color:#38bdf8;">
-        </div>
-        <div class="form-group">
-          <label>खपत गैस सिलेंडर संख्या (उदा. 1 या 1/2):</label>
-          <input type="text" id="actualGasCylinders" value="1" placeholder="1 या 1/2 या 0.5" style="border-color:#38bdf8;">
-        </div>
-        <div class="form-group">
-          <label>गैस सिलेंडर रिफिल वास्तविक व्यय (₹):</label>
-          <input type="number" id="actualGasSpend" value="0" step="0.01" style="border-color:#38bdf8;">
-        </div>
+        <div class="form-group"><label>प्राप्त गेहूं BV (Kg):</label><input type="number" id="rcvWheatBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त गेहूं 1-5 (Kg):</label><input type="number" id="rcvWheat15" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त गेहूं 6-8 (Kg):</label><input type="number" id="rcvWheat68" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त चावल BV (Kg):</label><input type="number" id="rcvRiceBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त चावल 1-5 (Kg):</label><input type="number" id="rcvRice15" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त चावल 6-8 (Kg):</label><input type="number" id="rcvRice68" value="0" step="0.1"></div>
+
+        <div class="form-group"><label>प्राप्त कुकिंग राशि BV (₹):</label><input type="number" id="rcvCookBv" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त कुकिंग राशि 1-5 (₹):</label><input type="number" id="rcvCook15" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त कुकिंग राशि 6-8 (₹):</label><input type="number" id="rcvCook68" value="0" step="0.01"></div>
+
+        <div class="form-group"><label>प्राप्त दूध पाउडर BV (Kg):</label><input type="number" id="rcvMilkBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त दूध पाउडर 1-5 (Kg):</label><input type="number" id="rcvMilk15" value="0" step="0.1"></div>
+        <div class="form-group"><label>प्राप्त दूध पाउडर 6-8 (Kg):</label><input type="number" id="rcvMilk68" value="0" step="0.1"></div>
+
+        <div class="form-group"><label>खरीदी गई चीनी BV (Kg):</label><input type="number" id="rcvSugarBv" value="0" step="0.1"></div>
+        <div class="form-group"><label>खरीदी गई चीनी 1-5 (Kg):</label><input type="number" id="rcvSugar15" value="0" step="0.1"></div>
+        <div class="form-group"><label>खरीदी गई चीनी 6-8 (Kg):</label><input type="number" id="rcvSugar68" value="0" step="0.1"></div>
+
+        <div class="form-group"><label>प्राप्त MDM कुक मानदेय (₹):</label><input type="number" id="rcvCookHonor" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त दुग्ध कुक मानदेय (₹):</label><input type="number" id="rcvMilkHelperCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त चीनी राशि (₹):</label><input type="number" id="rcvSugarCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त गैस रिफिलिंग राशि (₹):</label><input type="number" id="rcvGasCash" value="0" step="0.01"></div>
+        <div class="form-group"><label>प्राप्त MME राशि (₹):</label><input type="number" id="rcvMmeCash" value="0" step="0.01"></div>
+      </div>
+
+      <!-- 4. Actual Expenditures -->
+      <div class="section-label">4. माह में वास्तविक व्यय (Actual Expenditures)</div>
+      <div class="form-grid">
+        <div class="form-group"><label>चीनी क्रय वास्तविक व्यय (₹):</label><input type="number" id="actualSugarSpend" value="0" step="0.01"></div>
+        <div class="form-group"><label>गैस रिफिलिंग वास्तविक व्यय (₹):</label><input type="number" id="actualGasSpend" value="0" step="0.01"></div>
+        <div class="form-group"><label>MME वास्तविक व्यय (₹):</label><input type="number" id="actualMmeSpend" value="0" step="0.01"></div>
+        <div class="form-group"><label>दुग्ध कुक वास्तविक भुगतान (₹):</label><input type="number" id="actualMilkSpend" value="500" step="0.01"></div>
       </div>
 
       <div class="btn-row">
@@ -259,18 +316,19 @@
 
     <!-- Attendance Grid -->
     <div class="table-card no-print">
-      <div class="table-title">दैनिक उपस्थिति प्रविष्टि (मंगलवार व गुरुवार = चावल विशेष • रविवार स्वतः लॉक)</div>
+      <div class="table-title">दैनिक उपस्थिति प्रविष्टि (बाल वाटिका यदि न हो तो 0 रहने दें • मंगलवार व गुरुवार = चावल)[span_2](start_span)[span_2](end_span)</div>
       <table class="input-table">
         <thead>
           <tr>
             <th>तारीख</th>
             <th>वार</th>
-            <th>मेन्यू अनाज</th>
+            <th>मेन्यू</th>
+            <th>बाल वाटिका</th>
             <th>कक्षा 1 से 5</th>
             <th>कक्षा 6 से 8</th>
             <th>कुल छात्र</th>
             <th>अनाज खपत (Kg)</th>
-            <th>दूध मात्रा (Ltr)</th>
+            <th>दूध (Ltr)</th>
           </tr>
         </thead>
         <tbody id="attendanceGridBody">
@@ -289,285 +347,369 @@
     <!-- ==================== PAGE 1: MDM POSHAN & COOKING EXPENSE UC ==================== -->
     <div class="uc-page">
       <div class="uc-header">
-        <h2>मासिक उपयोगिता प्रमाण-पत्र (MDM पोषाहार एवं वित्तीय UC)</h2>
-        <h3>मध्याह्न भोजन योजना (मिड-डे मील) - राजस्थान सरकार</h3>
+        <h2>राष्ट्रीय पोषाहार सहायता कार्यक्रम (मिड डे मील योजना)[span_3](start_span)[span_3](end_span)</h2>
+        <h3>विद्यालय मासिक सूचना उपयोगिता प्रमाण-पत्र (सत्र <span id="pSession1">2026-27</span>)[span_4](start_span)[span_4](end_span)</h3>
       </div>
-      <div class="school-meta">
-        <span id="printSchool1">विद्यालय: -</span>
-        <span id="printPeeoBlock1">PEEO/ब्लॉक: -</span>
-        <span id="printUdise1">UDISE: -</span>
-        <span id="printMonth1">माह: -</span>
+      
+      <div class="school-meta-grid">
+        <div><strong>विद्यालय:</strong> <span id="pSchool">-</span></div>
+        <div><strong>ब्लॉक:</strong> <span id="pBlock">अनूपगढ़</span></div>
+        <div><strong>पीईईओ/ग्रा.पं.:</strong> <span id="pPeeo">-</span></div>
+        <div><strong>डाइस कोड:</strong> <span id="pUdise">-</span></div>
+        <div><strong>माह:</strong> <span id="pMonth">-</span></div>
+        <div><strong>जावक क्र./दिनांक:</strong> <span id="pDispatch">-</span></div>
+        <div><strong>संस्था प्रधान:</strong> <span id="pHead">-</span></div>
+        <div><strong>पोषाहार प्रभारी:</strong> <span id="pIncharge">-</span></div>
+        <div><strong>नामांकन:</strong> BV: <span id="pEnrBv">0</span> | 1-5: <span id="pEnr15">0</span> | 6-8: <span id="pEnr68">0</span></div>
       </div>
 
-      <!-- Physical Progress -->
+      <!-- 2. Bank Details -->
       <table class="uc-table">
         <thead>
           <tr>
-            <th>क्र.</th>
-            <th>मद विवरण</th>
-            <th>प्राथमिक (कक्षा 1-5)</th>
-            <th>उच्च प्राथमिक (कक्षा 6-8)</th>
-            <th>कुल योग</th>
+            <th colspan="3" style="text-align:left; background:#e2e8f0;">2. बैंक खाता विवरण[span_5](start_span)[span_5](end_span)</th>
+          </tr>
+          <tr>
+            <th>बैंक का नाम मय शाखा[span_6](start_span)[span_6](end_span)</th>
+            <th>आई.एफ.एस.सी. कोड (IFSC)[span_7](start_span)[span_7](end_span)</th>
+            <th>खाता संख्या (Account No.)[span_8](start_span)[span_8](end_span)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td class="text-left">एमडीएम कुल कार्य दिवस</td>
-            <td id="p1Days15">-</td>
-            <td id="p1Days68">-</td>
-            <td id="p1DaysTotal">-</td>
+            <td id="pBankName">-</td>
+            <td id="pIfsc">-</td>
+            <td id="pAccount">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 3. Food Availability -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">3. भोजन उपलब्धता विवरण[span_9](start_span)[span_9](end_span)</th>
           </tr>
           <tr>
-            <td>2</td>
-            <td class="text-left">कुल लाभान्वित छात्र दिवस संख्या</td>
-            <td id="p1Stud15">-</td>
-            <td id="p1Stud68">-</td>
-            <td id="p1StudTotal">-</td>
+            <th>क्र.[span_10](start_span)[span_10](end_span)</th>
+            <th>विवरण[span_11](start_span)[span_11](end_span)</th>
+            <th>बाल वाटिका[span_12](start_span)[span_12](end_span)</th>
+            <th>प्राथमिक (1-5)[span_13](start_span)[span_13](end_span)</th>
+            <th>उच्च प्राथमिक (6-8)[span_14](start_span)[span_14](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1[span_15](start_span)[span_15](end_span)</td>
+            <td class="text-left">माह में मिड डे मील कुल कार्य दिवस[span_16](start_span)[span_16](end_span)</td>
+            <td id="pDaysBv">0</td>
+            <td id="pDays15">0</td>
+            <td id="pDays68">0</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td class="text-left">खाद्यान्न उपभोग दर (प्रति छात्र प्रतिदिन)</td>
-            <td>100 ग्राम</td>
-            <td>150 ग्राम</td>
-            <td>-</td>
+            <td>2[span_17](start_span)[span_17](end_span)</td>
+            <td class="text-left">माह में लाभान्वित कुल विद्यार्थियों की संख्या (छात्र दिवस)[span_18](start_span)[span_18](end_span)</td>
+            <td id="pStudBv">0</td>
+            <td id="pStud15">0</td>
+            <td id="pStud68">0</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 4 & 5. Cook-cum-Helper Details -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="3" style="text-align:left; background:#e2e8f0;">4. कुक कम हेल्पर विवरण[span_19](start_span)[span_19](end_span)</th>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">5. कुक कम हेल्पर राशि विवरण (₹)[span_20](start_span)[span_20](end_span)</th>
           </tr>
           <tr>
-            <td>4</td>
-            <td class="text-left">कुल खाद्यान्न खपत (गेहूं + चावल) (Kg)</td>
-            <td id="p1Food15">-</td>
-            <td id="p1Food68">-</td>
-            <td id="p1FoodTotal">-</td>
+            <th>क्र.[span_21](start_span)[span_21](end_span)</th>
+            <th>कुक का नाम[span_22](start_span)[span_22](end_span)</th>
+            <th>लिंग[span_23](start_span)[span_23](end_span)</th>
+            <th>देय राशि[span_24](start_span)[span_24](end_span)</th>
+            <th>प्रा०शेष (अवशेष)[span_25](start_span)[span_25](end_span)</th>
+            <th>माह में प्राप्त[span_26](start_span)[span_26](end_span)</th>
+            <th>माह में खर्च राशि[span_27](start_span)[span_27](end_span)</th>
+            <th>अन्त में अवशेष[span_28](start_span)[span_28](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1[span_29](start_span)[span_29](end_span)</td>
+            <td id="pCookN1">-</td>
+            <td id="pCookG1">-</td>
+            <td id="pCookP1">-</td>
+            <td rowspan="3" id="pCookFinOpen" style="vertical-align:middle;">-</td>
+            <td rowspan="3" id="pCookFinRcv" style="vertical-align:middle;">-</td>
+            <td rowspan="3" id="pCookFinSpend" style="vertical-align:middle;">-</td>
+            <td rowspan="3" id="pCookFinClose" style="vertical-align:middle;">-</td>
           </tr>
           <tr>
-            <td>5</td>
-            <td class="text-left">कुकिंग कन्वर्जन दर (प्रति छात्र प्रतिदिन)</td>
-            <td id="p1Rate15Disp">₹5.45</td>
-            <td id="p1Rate68Disp">₹8.17</td>
-            <td>-</td>
+            <td>2[span_30](start_span)[span_30](end_span)</td>
+            <td id="pCookN2">-</td>
+            <td id="pCookG2">-</td>
+            <td id="pCookP2">-</td>
+          </tr>
+          <tr>
+            <td>3[span_31](start_span)[span_31](end_span)</td>
+            <td id="pCookN3">-</td>
+            <td id="pCookG3">-</td>
+            <td id="pCookP3">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 6. Food Grain Consumption (Kg) -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="6" style="text-align:left; background:#e2e8f0;">6. खाद्यान्न का विवरण (मात्रा किलोग्राम में)[span_32](start_span)[span_32](end_span)</th>
+          </tr>
+          <tr>
+            <th>कक्षा / वर्ग[span_33](start_span)[span_33](end_span)</th>
+            <th>खाद्यान्न प्रकार[span_34](start_span)[span_34](end_span)</th>
+            <th>पिछले माह अवशेष (प्रा०शेष)[span_35](start_span)[span_35](end_span)</th>
+            <th>इस माह में प्राप्त[span_36](start_span)[span_36](end_span)</th>
+            <th>इस माह में खर्च[span_37](start_span)[span_37](end_span)</th>
+            <th>कुल अवशेष खाद्यान्न[span_38](start_span)[span_38](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" style="vertical-align:middle;">बाल वाटिका (100g)[span_39](start_span)[span_39](end_span)</td>
+            <td>गेंहूँ[span_40](start_span)[span_40](end_span)</td>
+            <td id="pWOpenBv">-</td><td id="pWRcvBv">-</td><td id="pWUsedBv">-</td><td id="pWCloseBv">-</td>
+          </tr>
+          <tr>
+            <td>चावल[span_41](start_span)[span_41](end_span)</td>
+            <td id="pROpenBv">-</td><td id="pRRcvBv">-</td><td id="pRUsedBv">-</td><td id="pRCloseBv">-</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="vertical-align:middle;">1 से 5 (100 ग्राम)[span_42](start_span)[span_42](end_span)</td>
+            <td>गेंहूँ[span_43](start_span)[span_43](end_span)</td>
+            <td id="pWOpen15">-</td><td id="pWRcv15">-</td><td id="pWUsed15">-</td><td id="pWClose15">-</td>
+          </tr>
+          <tr>
+            <td>चावल[span_44](start_span)[span_44](end_span)</td>
+            <td id="pROpen15">-</td><td id="pRRcv15">-</td><td id="pRUsed15">-</td><td id="pRClose15">-</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="vertical-align:middle;">6 से 8 (150 ग्राम)[span_45](start_span)[span_45](end_span)</td>
+            <td>गेंहूँ[span_46](start_span)[span_46](end_span)</td>
+            <td id="pWOpen68">-</td><td id="pWRcv68">-</td><td id="pWUsed68">-</td><td id="pWClose68">-</td>
+          </tr>
+          <tr>
+            <td>चावल[span_47](start_span)[span_47](end_span)</td>
+            <td id="pROpen68">-</td><td id="pRRcv68">-</td><td id="pRUsed68">-</td><td id="pRClose68">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 7. Cooking Conversion Cost -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">7. कुकिंग कन्वर्जन राशि का विवरण (रूपयों में)[span_48](start_span)[span_48](end_span)</th>
+          </tr>
+          <tr>
+            <th>कक्षा / वर्ग[span_49](start_span)[span_49](end_span)</th>
+            <th>पिछले माह अवशेष (प्रा०शेष)[span_50](start_span)[span_50](end_span)</th>
+            <th>इस माह में प्राप्त राशि[span_51](start_span)[span_51](end_span)</th>
+            <th>इस माह में खर्च राशि[span_52](start_span)[span_52](end_span)</th>
+            <th>इस माह कुल अवशेष राशि[span_53](start_span)[span_53](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left">बाल वाटिका (दर-₹<span id="pDispRateBv">6.78</span>)</td>
+            <td id="pCOpenBv">-</td><td id="pCRcvBv">-</td><td id="pCSpendBv">-</td><td id="pCCloseBv">-</td>
+          </tr>
+          <tr>
+            <td class="text-left">1 से 5 (दर-₹<span id="pDispRate15">6.78</span>)[span_54](start_span)[span_54](end_span)</td>
+            <td id="pCOpen15">-</td><td id="pCRcv15">-</td><td id="pCSpend15">-</td><td id="pCClose15">-</td>
+          </tr>
+          <tr>
+            <td class="text-left">6 से 8 (दर-₹<span id="pDispRate68">10.17</span>)[span_55](start_span)[span_55](end_span)</td>
+            <td id="pCOpen68">-</td><td id="pCRcv68">-</td><td id="pCSpend68">-</td><td id="pCClose68">-</td>
           </tr>
           <tr style="background:#f8fafc; font-weight:bold;">
-            <td>6</td>
-            <td class="text-left">कुल कुकिंग कन्वर्जन व्यय राशि (₹)</td>
-            <td id="p1CookCost15">-</td>
-            <td id="p1CookCost68">-</td>
-            <td id="p1CookCostTotal">-</td>
+            <td class="text-left">कुल योग (समस्त वर्ग)</td>
+            <td id="pCOpenTot">-</td><td id="pCRcvTot">-</td><td id="pCSpendTot">-</td><td id="pCCloseTot">-</td>
           </tr>
         </tbody>
       </table>
 
-      <!-- Food Grain Stock -->
-      <div style="font-size:11px; font-weight:bold; margin-bottom:3px;">1. खाद्यान्न भौतिक स्टॉक स्थिति (दैनिक मेन्यू अनुसार वास्तविक खपत - Kg):</div>
-      <table class="uc-table">
-        <thead>
-          <tr>
-            <th>वस्तु</th>
-            <th>प्रारंभिक शेष</th>
-            <th>माह में प्राप्त</th>
-            <th>कुल स्टॉक</th>
-            <th>माह में वास्तविक खपत</th>
-            <th>अंतिम अवशेष</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="text-left">गेहूं (सोम, बुध, शुक्र, शनि)</td>
-            <td id="p1WheatOpen">-</td>
-            <td id="p1WheatRcv">-</td>
-            <td id="p1WheatTotalStock">-</td>
-            <td id="p1WheatUsed">-</td>
-            <td id="p1WheatClose">-</td>
-          </tr>
-          <tr>
-            <td class="text-left">चावल (मंगलवार व गुरुवार विशेष)</td>
-            <td id="p1RiceOpen">-</td>
-            <td id="p1RiceRcv">-</td>
-            <td id="p1RiceTotalStock">-</td>
-            <td id="p1RiceUsed">-</td>
-            <td id="p1RiceClose">-</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- Financial Status -->
-      <div style="font-size:11px; font-weight:bold; margin-bottom:3px;">2. वित्तीय स्थिति (कुकिंग राशि एवं कुक-कम-हेल्पर मानदेय - ₹ में):</div>
-      <table class="uc-table">
-        <thead>
-          <tr>
-            <th>मद का नाम</th>
-            <th>प्रारंभिक शेष</th>
-            <th>माह में प्राप्त</th>
-            <th>कुल राशि</th>
-            <th>माह में व्यय</th>
-            <th>अंतिम शेष बचत</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="text-left">कुकिंग कन्वर्जन मद</td>
-            <td id="p1FinCookOpen">-</td>
-            <td id="p1FinCookRcv">-</td>
-            <td id="p1FinCookTotal">-</td>
-            <td id="p1FinCookSpend">-</td>
-            <td id="p1FinCookBal">-</td>
-          </tr>
-          <tr>
-            <td class="text-left">कुक-कम-हेल्पर मानदेय (<span id="p1CookCountDisp">1</span> कुक)</td>
-            <td id="p1FinHonorOpen">-</td>
-            <td id="p1FinHonorRcv">-</td>
-            <td id="p1FinHonorTotal">-</td>
-            <td id="p1FinHonorSpend">-</td>
-            <td id="p1FinHonorBal">-</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- 3 Signature Blocks (SMC removed, Headmaster and PEEO confirmed) -->
+      <!-- Signatures Page 1 -->
       <div class="signature-row">
-        <div class="sign-box">हस्ताक्षर पोषाहार प्रभारी</div>
-        <div class="sign-box">हस्ताक्षर संस्था प्रधान / प्रधानाध्यापक (मय मोहर)</div>
-        <div class="sign-box">हस्ताक्षर PEEO / UCEEO (मय मोहर)</div>
+        <div class="sign-box">हस्ताक्षर पोषाहार प्रभारी<br><span id="pSignMobInc">मो०नं०: -</span></div>
+        <div class="sign-box">हस्ताक्षर संस्थाप्रधान (मय मोहर)<br><span id="pSignMobHead">मो०नं०: -</span></div>
+        <div class="sign-box">हस्ताक्षर पीईईओ (मय मोहर)<br><span id="pSignMobPeeo">मो०नं०: -</span></div>
       </div>
     </div>
 
     <!-- ==================== PAGE 2: PANNA DHAI BAL GOPAL MILK SCHEME UC ==================== -->
     <div class="uc-page">
       <div class="uc-header">
-        <h2>मासिक उपयोगिता प्रमाण-पत्र (पन्नाधाय दुग्ध योजना UC)</h2>
-        <h3>पन्नाधाय बाल गोपाल योजना (दूध वितरण) - राजस्थान सरकार</h3>
-      </div>
-      <div class="school-meta">
-        <span id="printSchool2">विद्यालय: -</span>
-        <span id="printPeeoBlock2">PEEO/ब्लॉक: -</span>
-        <span id="printUdise2">UDISE: -</span>
-        <span id="printMonth2">माह: -</span>
+        <h2>पन्नाधाय बाल गोपाल योजना (दूध वितरण कार्यक्रम)[span_56](start_span)[span_56](end_span)</h2>
+        <h3>मासिक उपयोगिता प्रमाण-पत्र (सत्र <span id="pSession2">2026-27</span>)</h3>
       </div>
 
-      <!-- Milk Consumption Table -->
+      <div class="school-meta-grid">
+        <div><strong>विद्यालय:</strong> <span id="p2School">-</span></div>
+        <div><strong>ब्लॉक:</strong> <span id="p2Block">अनूपगढ़</span></div>
+        <div><strong>पीईईओ:</strong> <span id="p2Peeo">-</span></div>
+        <div><strong>डाइस कोड:</strong> <span id="p2Udise">-</span></div>
+        <div><strong>माह:</strong> <span id="p2Month">-</span></div>
+        <div><strong>दिनांक:</strong> <span id="p2Date">-</span></div>
+      </div>
+
+      <!-- 8. Milk Availability -->
       <table class="uc-table">
         <thead>
           <tr>
-            <th>क्र.</th>
-            <th>विवरण</th>
-            <th>प्राथमिक (कक्षा 1-5)</th>
-            <th>उच्च प्राथमिक (कक्षा 6-8)</th>
-            <th>कुल योग</th>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">8. दुग्ध उपलब्धता विवरण[span_57](start_span)[span_57](end_span)</th>
+          </tr>
+          <tr>
+            <th>क्र.[span_58](start_span)[span_58](end_span)</th>
+            <th>विवरण[span_59](start_span)[span_59](end_span)</th>
+            <th>बाल वाटिका[span_60](start_span)[span_60](end_span)</th>
+            <th>प्राथमिक (1-5)[span_61](start_span)[span_61](end_span)</th>
+            <th>उच्च प्राथमिक (6-8)[span_62](start_span)[span_62](end_span)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td class="text-left">कुल दूध वितरण कार्य दिवस</td>
-            <td id="p2Days15">-</td>
-            <td id="p2Days68">-</td>
-            <td id="p2DaysTotal">-</td>
+            <td>1[span_63](start_span)[span_63](end_span)</td>
+            <td class="text-left">पन्नाधाय बाल गोपाल योजना के कार्य दिवस[span_64](start_span)[span_64](end_span)</td>
+            <td id="pMDayBv">0</td>
+            <td id="pMDay15">0</td>
+            <td id="pMDay68">0</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td class="text-left">दूध पीने वाले कुल छात्र दिवस</td>
-            <td id="p2Stud15">-</td>
-            <td id="p2Stud68">-</td>
-            <td id="p2StudTotal">-</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td class="text-left">दूध पाउडर दर प्रति छात्र</td>
-            <td>15 ग्राम</td>
-            <td>20 ग्राम</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td class="text-left">कुल दूध पाउडर खपत (Kg)</td>
-            <td id="p2Milk15">-</td>
-            <td id="p2Milk68">-</td>
-            <td id="p2MilkTotal">-</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td class="text-left">चीनी उपभोग दर प्रति छात्र</td>
-            <td>8.4 ग्राम</td>
-            <td>10.2 ग्राम</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td class="text-left">कुल चीनी खपत (Kg)</td>
-            <td id="p2Sugar15">-</td>
-            <td id="p2Sugar68">-</td>
-            <td id="p2SugarTotal">-</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td class="text-left">तैयार दूध आयतन (लीटर)</td>
-            <td id="p2Vol15">-</td>
-            <td id="p2Vol68">-</td>
-            <td id="p2VolTotal">-</td>
+            <td>2[span_65](start_span)[span_65](end_span)</td>
+            <td class="text-left">लाभान्वित कुल विद्यार्थियों की संख्या (दूध छात्र दिवस)[span_66](start_span)[span_66](end_span)</td>
+            <td id="pMStudBv">0</td>
+            <td id="pMStud15">0</td>
+            <td id="pMStud68">0</td>
           </tr>
         </tbody>
       </table>
 
-      <!-- Milk Scheme Physical & Financial Details (Sugar Cash & Gas Cylinders Included) -->
-      <div style="font-size:11px; font-weight:bold; margin-bottom:3px;">वित्तीय व स्टॉक स्थिति विवरण (चीनी व गैस सिलेंडर मद सहित):</div>
+      <!-- 9. Milk Powder Stock (Kg) -->
       <table class="uc-table">
         <thead>
           <tr>
-            <th>मद का नाम</th>
-            <th>प्रारंभिक शेष</th>
-            <th>माह में प्राप्त</th>
-            <th>कुल योग</th>
-            <th>माह में व्यय/खपत</th>
-            <th>अंतिम शेष / बचत</th>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">9. पन्नाधाय बाल गोपाल (दुग्ध पाउडर) योजना का विवरण (मात्रा Kg में)[span_67](start_span)[span_67](end_span)</th>
+          </tr>
+          <tr>
+            <th>कक्षा / वर्ग[span_68](start_span)[span_68](end_span)</th>
+            <th>पिछले माह अवशेष (प्रा०शेष)[span_69](start_span)[span_69](end_span)</th>
+            <th>सप्लायर से माह में प्राप्त[span_70](start_span)[span_70](end_span)</th>
+            <th>इस माह में खर्च पाउडर[span_71](start_span)[span_71](end_span)</th>
+            <th>कुल अवशेष दुग्ध पाउडर[span_72](start_span)[span_72](end_span)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="text-left">दूध पाउडर स्टॉक (Kg)</td>
-            <td id="p2MilkOpen">-</td>
-            <td id="p2MilkRcv">-</td>
-            <td id="p2MilkTotalStock">-</td>
-            <td id="p2MilkUsed">-</td>
-            <td id="p2MilkClose">-</td>
+            <td class="text-left">बाल वाटिका (15 ग्राम)</td>
+            <td id="pMPOpenBv">-</td><td id="pMPRcvBv">-</td><td id="pMPUsedBv">-</td><td id="pMPCloseBv">-</td>
           </tr>
           <tr>
-            <td class="text-left">चीनी भौतिक स्टॉक (Kg)</td>
-            <td id="p2SugarOpen">-</td>
-            <td id="p2SugarRcv">-</td>
-            <td id="p2SugarTotalStock">-</td>
-            <td id="p2SugarUsed">-</td>
-            <td id="p2SugarClose">-</td>
+            <td class="text-left">1 से 5 (मात्रा-15 ग्राम)[span_73](start_span)[span_73](end_span)</td>
+            <td id="pMPOpen15">-</td><td id="pMPRcv15">-</td><td id="pMPUsed15">-</td><td id="pMPClose15">-</td>
           </tr>
           <tr>
-            <td class="text-left">चीनी वित्तीय मद (₹)</td>
-            <td id="p2SugarCashOpen">-</td>
-            <td id="p2SugarCashRcv">-</td>
-            <td id="p2SugarCashTotal">-</td>
-            <td id="p2SugarCashSpend">-</td>
-            <td id="p2SugarCashClose">-</td>
-          </tr>
-          <tr>
-            <td class="text-left">गैस सिलेंडर मद (₹) [खपत सिलेंडर: <span id="p2GasCylDisp">1</span>]</td>
-            <td id="p2GasCashOpen">-</td>
-            <td id="p2GasCashRcv">-</td>
-            <td id="p2GasCashTotal">-</td>
-            <td id="p2GasCashSpend">-</td>
-            <td id="p2GasCashClose">-</td>
+            <td class="text-left">6 से 8 (मात्रा-20 ग्राम)[span_74](start_span)[span_74](end_span)</td>
+            <td id="pMPOpen68">-</td><td id="pMPRcv68">-</td><td id="pMPUsed68">-</td><td id="pMPClose68">-</td>
           </tr>
           <tr style="background:#f8fafc; font-weight:bold;">
-            <td class="text-left">कुक-कम-हेल्पर मानदेय (दूध तैयार करने हेतु)</td>
-            <td colspan="3">नियत मानदेय मद</td>
-            <td colspan="2" style="color:#000;">देय/भुगतान राशि: ₹<span id="p2MilkHonorPaid">-</span></td>
+            <td class="text-left">कुल योग</td>
+            <td id="pMPOpenTot">-</td><td id="pMPRcvTot">-</td><td id="pMPUsedTot">-</td><td id="pMPCloseTot">-</td>
           </tr>
         </tbody>
       </table>
 
-      <!-- 3 Signature Blocks (SMC removed, Headmaster and PEEO confirmed) -->
+      <!-- 10. Sugar Stock (Kg) -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">10. पन्नाधाय बाल गोपाल योजनान्तर्गत चीनी का विवरण (मात्रा Kg में)[span_75](start_span)[span_75](end_span)</th>
+          </tr>
+          <tr>
+            <th>कक्षा / वर्ग[span_76](start_span)[span_76](end_span)</th>
+            <th>पिछले माह अवशेष (प्रा०शेष)[span_77](start_span)[span_77](end_span)</th>
+            <th>इस माह में खरीदी गई चीनी[span_78](start_span)[span_78](end_span)</th>
+            <th>इस माह में खर्च चीनी[span_79](start_span)[span_79](end_span)</th>
+            <th>कुल अवशेष चीनी[span_80](start_span)[span_80](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left">बाल वाटिका (8.4 ग्राम)</td>
+            <td id="pSPOpenBv">-</td><td id="pSPRcvBv">-</td><td id="pSPUsedBv">-</td><td id="pSPCloseBv">-</td>
+          </tr>
+          <tr>
+            <td class="text-left">1 से 5 (मात्रा-8.4 ग्राम)[span_81](start_span)[span_81](end_span)</td>
+            <td id="pSPOpen15">-</td><td id="pSPRcv15">-</td><td id="pSPUsed15">-</td><td id="pSPClose15">-</td>
+          </tr>
+          <tr>
+            <td class="text-left">6 से 8 (मात्रा-10.2 ग्राम)[span_82](start_span)[span_82](end_span)</td>
+            <td id="pSPOpen68">-</td><td id="pSPRcv68">-</td><td id="pSPUsed68">-</td><td id="pSPClose68">-</td>
+          </tr>
+          <tr style="background:#f8fafc; font-weight:bold;">
+            <td class="text-left">कुल योग</td>
+            <td id="pSPOpenTot">-</td><td id="pSPRcvTot">-</td><td id="pSPUsedTot">-</td><td id="pSPCloseTot">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 11, 12, 13, 14 Financial Tables -->
+      <table class="uc-table">
+        <thead>
+          <tr>
+            <th colspan="5" style="text-align:left; background:#e2e8f0;">वित्तीय मद विवरण (रूपयों में)</th>
+          </tr>
+          <tr>
+            <th>मद का नाम</th>
+            <th>पिछले माह अवशेष (प्रा०शेष)[span_83](start_span)[span_83](end_span)</th>
+            <th>माह में प्राप्त राशि[span_84](start_span)[span_84](end_span)</th>
+            <th>माह में खर्च राशि[span_85](start_span)[span_85](end_span)</th>
+            <th>माह के अन्त में अवशेष[span_86](start_span)[span_86](end_span)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left"><strong>11. चीनी खरीदने हेतु राशि[span_87](start_span)[span_87](end_span)</strong></td>
+            <td id="pFCashOpenSugar">-</td><td id="pFCashRcvSugar">-</td><td id="pFCashSpendSugar">-</td><td id="pFCashCloseSugar">-</td>
+          </tr>
+          <tr>
+            <td class="text-left"><strong>12. दुग्ध योजनान्तर्गत हेल्पर मानदेय[span_88](start_span)[span_88](end_span)</strong></td>
+            <td id="pFCashOpenMilkH">-</td><td id="pFCashRcvMilkH">-</td><td id="pFCashSpendMilkH">-</td><td id="pFCashCloseMilkH">-</td>
+          </tr>
+          <tr>
+            <td class="text-left"><strong>13. एम.एम.ई. (MME) राशि विवरण[span_89](start_span)[span_89](end_span)</strong></td>
+            <td id="pFCashOpenMme">-</td><td id="pFCashRcvMme">-</td><td id="pFCashSpendMme">-</td><td id="pFCashCloseMme">-</td>
+          </tr>
+          <tr>
+            <td class="text-left"><strong>14. गैस रिफिलिंग राशि विवरण[span_90](start_span)[span_90](end_span)</strong></td>
+            <td id="pFCashOpenGas">-</td><td id="pFCashRcvGas">-</td><td id="pFCashSpendGas">-</td><td id="pFCashCloseGas">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note-text">
+        <strong>नोट:</strong> चीनी खरीदी का विवरण हर माह रिपोर्ट में नहीं दिखाना है। जब आपके स्टॉक में चीनी खरीदी जाती है तो ही चीनी खर्च राशि विवरण दिखाया जाना है अन्यथा नहीं दिखाना।[span_91](start_span)[span_91](end_span)
+      </div>
+
+      <!-- Signatures Page 2 -->
       <div class="signature-row">
-        <div class="sign-box">हस्ताक्षर पोषाहार प्रभारी</div>
-        <div class="sign-box">हस्ताक्षर संस्था प्रधान / प्रधानाध्यापक (मय मोहर)</div>
-        <div class="sign-box">हस्ताक्षर PEEO / UCEEO (मय मोहर)</div>
+        <div class="sign-box">हस्ताक्षर पोषाहार प्रभारी<br><span id="p2SignMobInc">मो०नं०: -</span></div>
+        <div class="sign-box">हस्ताक्षर संस्थाप्रधान (मय मोहर)<br><span id="p2SignMobHead">मो०नं०: -</span></div>
+        <div class="sign-box">हस्ताक्षर पीईईओ (मय मोहर)<br><span id="p2SignMobPeeo">मो०नं०: -</span></div>
       </div>
     </div>
+
   </div>
 
   <script>
@@ -576,30 +718,23 @@
 
     const monthSelect = document.getElementById('monthSelect');
     const yearSelect = document.getElementById('yearSelect');
-    const cookCount = document.getElementById('cookCount');
-    const rateCook15 = document.getElementById('rateCook15');
-    const rateCook68 = document.getElementById('rateCook68');
-
-    // Actual Expenditures Elements
-    const actualCookSpend = document.getElementById('actualCookSpend');
-    const actualMilkSpend = document.getElementById('actualMilkSpend');
-    const actualSugarSpend = document.getElementById('actualSugarSpend');
-    const actualGasCylinders = document.getElementById('actualGasCylinders');
-    const actualGasSpend = document.getElementById('actualGasSpend');
-
     const attendanceGridBody = document.getElementById('attendanceGridBody');
     const screenUcWrapper = document.getElementById('screenUcWrapper');
     const ucContainer = document.getElementById('ucContainer');
+
+    // 🌟 सेफ टेक्स्ट सेटर (ताकि कोई भी आईडी मिसिंग होने पर कोड क्रैश न हो)
+    function safeSetText(id, text) {
+      const el = document.getElementById(id);
+      if (el) el.innerText = text;
+    }
 
     function getStorageKey() {
       return `mdm_data_${yearSelect.value}_${monthSelect.value}`;
     }
 
-    cookCount.addEventListener('input', function() {
-      const c = parseInt(this.value) || 1;
-      actualCookSpend.value = (c * 2467).toFixed(2);
-      autoSaveData();
-    });
+    function getMonthMetaKey() {
+      return `mdm_meta_${yearSelect.value}_${monthSelect.value}`;
+    }
 
     function renderMonthGrid() {
       const year = parseInt(yearSelect.value);
@@ -622,11 +757,12 @@
           tr.className = 'rice-row';
         }
 
-        const daySaved = savedData[day] || { p15: '', p68: '' };
+        const daySaved = savedData[day] || { bv: '', p15: '', p68: '' };
+        const vbv = parseInt(daySaved.bv) || 0;
         const v15 = parseInt(daySaved.p15) || 0;
         const v68 = parseInt(daySaved.p68) || 0;
-        const dayTotalStud = v15 + v68;
-        const dayFoodKg = (v15 * 0.100) + (v68 * 0.150);
+        const dayTotalStud = vbv + v15 + v68;
+        const dayFoodKg = ((vbv + v15) * 0.100) + (v68 * 0.150);
 
         let menuBadge = '-';
         if (!isSunday) {
@@ -638,6 +774,9 @@
           <td>${weekDays[dayOfWeek]}</td>
           <td>${menuBadge}</td>
           <td>
+            <input type="number" class="num-in in-bv" data-day="${day}" min="0" value="${isSunday ? '0' : (daySaved.bv || '')}" ${isSunday ? 'disabled' : ''}>
+          </td>
+          <td>
             <input type="number" class="num-in in-15" data-day="${day}" min="0" value="${isSunday ? '0' : (daySaved.p15 || '')}" ${isSunday ? 'disabled' : ''}>
           </td>
           <td>
@@ -645,7 +784,7 @@
           </td>
           <td id="tot_${day}">${isSunday ? '0' : dayTotalStud}</td>
           <td id="food_${day}">${isSunday ? '0.00' : dayFoodKg.toFixed(2)}</td>
-          <td id="vol_${day}">${isSunday ? '0 L' : calculateMilkVolume(daySaved.p15, daySaved.p68)}</td>
+          <td id="vol_${day}">${isSunday ? '0 L' : calculateMilkVolume(daySaved.bv, daySaved.p15, daySaved.p68)}</td>
         `;
 
         attendanceGridBody.appendChild(tr);
@@ -654,171 +793,338 @@
       document.querySelectorAll('.num-in').forEach(input => {
         input.addEventListener('input', function() {
           const d = this.getAttribute('data-day');
-          const row15 = parseInt(document.querySelector(`.in-15[data-day="${d}"]`).value) || 0;
-          const row68 = parseInt(document.querySelector(`.in-68[data-day="${d}"]`).value) || 0;
+          const rbv = parseInt(document.querySelector(`.in-bv[data-day="${d}"]`).value) || 0;
+          const r15 = parseInt(document.querySelector(`.in-15[data-day="${d}"]`).value) || 0;
+          const r68 = parseInt(document.querySelector(`.in-68[data-day="${d}"]`).value) || 0;
           
-          document.getElementById(`tot_${d}`).innerText = row15 + row68;
-          document.getElementById(`food_${d}`).innerText = ((row15 * 0.100) + (row68 * 0.150)).toFixed(2);
-          document.getElementById(`vol_${d}`).innerText = calculateMilkVolume(row15, row68);
+          safeSetText(`tot_${d}`, rbv + r15 + r68);
+          safeSetText(`food_${d}`, (((rbv + r15) * 0.100) + (r68 * 0.150)).toFixed(2));
+          safeSetText(`vol_${d}`, calculateMilkVolume(rbv, r15, r68));
           autoSaveData();
         });
       });
     }
 
-    function calculateMilkVolume(c15, c68) {
+    function calculateMilkVolume(cbv, c15, c68) {
+      const v0 = (parseInt(cbv) || 0) * 150;
       const v1 = (parseInt(c15) || 0) * 150;
       const v2 = (parseInt(c68) || 0) * 200;
-      return ((v1 + v2) / 1000).toFixed(1) + ' L';
+      return ((v0 + v1 + v2) / 1000).toFixed(1) + ' L';
     }
 
     function autoSaveData() {
       const data = {};
       document.querySelectorAll('.in-15').forEach(input => {
         const day = input.getAttribute('data-day');
-        const v15 = input.value;
-        const v68 = document.querySelector(`.in-68[data-day="${day}"]`).value;
-        data[day] = { p15: v15, p68: v68 };
+        data[day] = {
+          bv: document.querySelector(`.in-bv[data-day="${day}"]`).value,
+          p15: input.value,
+          p68: document.querySelector(`.in-68[data-day="${day}"]`).value
+        };
       });
 
       localStorage.setItem(getStorageKey(), JSON.stringify(data));
+
+      // Permanent Meta
+      localStorage.setItem('mdm_session_name', document.getElementById('sessionName').value);
       localStorage.setItem('mdm_school_name', document.getElementById('schoolName').value);
-      localStorage.setItem('mdm_peeo_block', document.getElementById('peeoBlock').value);
+      localStorage.setItem('mdm_block_name', 'अनूपगढ़');
+      localStorage.setItem('mdm_peeo_name', document.getElementById('peeoName').value);
       localStorage.setItem('mdm_udise_code', document.getElementById('udiseCode').value);
-      localStorage.setItem('mdm_cook_count', cookCount.value);
+      localStorage.setItem('mdm_head_name', document.getElementById('headName').value);
+      localStorage.setItem('mdm_head_mobile', document.getElementById('headMobile').value);
+      localStorage.setItem('mdm_incharge_name', document.getElementById('inchargeName').value);
+      localStorage.setItem('mdm_incharge_mobile', document.getElementById('inchargeMobile').value);
+      localStorage.setItem('mdm_peeo_mobile', document.getElementById('peeoMobile').value);
 
-      // Rates
-      localStorage.setItem('mdm_rate_15', rateCook15.value);
-      localStorage.setItem('mdm_rate_68', rateCook68.value);
+      localStorage.setItem('mdm_bank_name', document.getElementById('bankName').value);
+      localStorage.setItem('mdm_ifsc_code', document.getElementById('ifscCode').value);
+      localStorage.setItem('mdm_account_no', document.getElementById('accountNo').value);
 
-      // Opening
-      localStorage.setItem('mdm_open_wheat', document.getElementById('openWheat').value);
-      localStorage.setItem('mdm_open_rice', document.getElementById('openRice').value);
-      localStorage.setItem('mdm_open_cooking', document.getElementById('openCooking').value);
-      localStorage.setItem('mdm_open_cook_honor', document.getElementById('openCookHonor').value);
-      localStorage.setItem('mdm_open_milk', document.getElementById('openMilk').value);
-      localStorage.setItem('mdm_open_sugar', document.getElementById('openSugar').value);
-      localStorage.setItem('mdm_open_sugar_cash', document.getElementById('openSugarCash').value);
-      localStorage.setItem('mdm_open_gas_cash', document.getElementById('openGasCash').value);
+      localStorage.setItem('mdm_rate_cook_bv', document.getElementById('rateCookBv').value);
+      localStorage.setItem('mdm_rate_cook_15', document.getElementById('rateCook15').value);
+      localStorage.setItem('mdm_rate_cook_68', document.getElementById('rateCook68').value);
 
-      // Received
-      localStorage.setItem('mdm_rcv_wheat', document.getElementById('rcvWheat').value);
-      localStorage.setItem('mdm_rcv_rice', document.getElementById('rcvRice').value);
-      localStorage.setItem('mdm_rcv_cooking', document.getElementById('rcvCooking').value);
-      localStorage.setItem('mdm_rcv_cook_honor', document.getElementById('rcvCookHonor').value);
-      localStorage.setItem('mdm_rcv_milk', document.getElementById('rcvMilk').value);
-      localStorage.setItem('mdm_rcv_sugar', document.getElementById('rcvSugar').value);
-      localStorage.setItem('mdm_rcv_sugar_cash', document.getElementById('rcvSugarCash').value);
-      localStorage.setItem('mdm_rcv_gas_cash', document.getElementById('rcvGasCash').value);
+      // Month specific meta
+      const mMeta = {
+        dispatchNo: document.getElementById('dispatchNo').value,
+        dispatchDate: document.getElementById('dispatchDate').value,
+        enrBv: document.getElementById('enrBv').value,
+        enr15: document.getElementById('enr15').value,
+        enr68: document.getElementById('enr68').value,
 
-      // Actual Spent
-      localStorage.setItem('mdm_actual_cook_spend', actualCookSpend.value);
-      localStorage.setItem('mdm_actual_milk_spend', actualMilkSpend.value);
-      localStorage.setItem('mdm_actual_sugar_spend', actualSugarSpend.value);
-      localStorage.setItem('mdm_actual_gas_cyl', actualGasCylinders.value);
-      localStorage.setItem('mdm_actual_gas_spend', actualGasSpend.value);
+        cookName1: document.getElementById('cookName1').value,
+        cookGender1: document.getElementById('cookGender1').value,
+        cookPay1: document.getElementById('cookPay1').value,
+        cookName2: document.getElementById('cookName2').value,
+        cookGender2: document.getElementById('cookGender2').value,
+        cookPay2: document.getElementById('cookPay2').value,
+        cookName3: document.getElementById('cookName3').value,
+        cookGender3: document.getElementById('cookGender3').value,
+        cookPay3: document.getElementById('cookPay3').value,
+
+        openWheatBv: document.getElementById('openWheatBv').value,
+        openWheat15: document.getElementById('openWheat15').value,
+        openWheat68: document.getElementById('openWheat68').value,
+        openRiceBv: document.getElementById('openRiceBv').value,
+        openRice15: document.getElementById('openRice15').value,
+        openRice68: document.getElementById('openRice68').value,
+
+        openCookBv: document.getElementById('openCookBv').value,
+        openCook15: document.getElementById('openCook15').value,
+        openCook68: document.getElementById('openCook68').value,
+
+        openMilkBv: document.getElementById('openMilkBv').value,
+        openMilk15: document.getElementById('openMilk15').value,
+        openMilk68: document.getElementById('openMilk68').value,
+
+        openSugarBv: document.getElementById('openSugarBv').value,
+        openSugar15: document.getElementById('openSugar15').value,
+        openSugar68: document.getElementById('openSugar68').value,
+
+        openCookHonor: document.getElementById('openCookHonor').value,
+        openMilkHelperCash: document.getElementById('openMilkHelperCash').value,
+        openSugarCash: document.getElementById('openSugarCash').value,
+        openGasCash: document.getElementById('openGasCash').value,
+        openMmeCash: document.getElementById('openMmeCash').value,
+
+        rcvWheatBv: document.getElementById('rcvWheatBv').value,
+        rcvWheat15: document.getElementById('rcvWheat15').value,
+        rcvWheat68: document.getElementById('rcvWheat68').value,
+        rcvRiceBv: document.getElementById('rcvRiceBv').value,
+        rcvRice15: document.getElementById('rcvRice15').value,
+        rcvRice68: document.getElementById('rcvRice68').value,
+
+        rcvCookBv: document.getElementById('rcvCookBv').value,
+        rcvCook15: document.getElementById('rcvCook15').value,
+        rcvCook68: document.getElementById('rcvCook68').value,
+
+        rcvMilkBv: document.getElementById('rcvMilkBv').value,
+        rcvMilk15: document.getElementById('rcvMilk15').value,
+        rcvMilk68: document.getElementById('rcvMilk68').value,
+
+        rcvSugarBv: document.getElementById('rcvSugarBv').value,
+        rcvSugar15: document.getElementById('rcvSugar15').value,
+        rcvSugar68: document.getElementById('rcvSugar68').value,
+
+        rcvCookHonor: document.getElementById('rcvCookHonor').value,
+        rcvMilkHelperCash: document.getElementById('rcvMilkHelperCash').value,
+        rcvSugarCash: document.getElementById('rcvSugarCash').value,
+        rcvGasCash: document.getElementById('rcvGasCash').value,
+        rcvMmeCash: document.getElementById('rcvMmeCash').value,
+
+        actualSugarSpend: document.getElementById('actualSugarSpend').value,
+        actualGasSpend: document.getElementById('actualGasSpend').value,
+        actualMmeSpend: document.getElementById('actualMmeSpend').value,
+        actualMilkSpend: document.getElementById('actualMilkSpend').value
+      };
+
+      localStorage.setItem(getMonthMetaKey(), JSON.stringify(mMeta));
     }
 
-    function loadSavedSchoolDetails() {
+    function loadMonthDataWithAutoCarry() {
+      if (localStorage.getItem('mdm_session_name')) {
+        document.getElementById('sessionName').value = localStorage.getItem('mdm_session_name');
+      }
       if (localStorage.getItem('mdm_school_name')) document.getElementById('schoolName').value = localStorage.getItem('mdm_school_name');
-      if (localStorage.getItem('mdm_peeo_block')) document.getElementById('peeoBlock').value = localStorage.getItem('mdm_peeo_block');
+      
+      document.getElementById('blockName').value = 'अनूपगढ़';
+      localStorage.setItem('mdm_block_name', 'अनूपगढ़');
+
+      if (localStorage.getItem('mdm_peeo_name')) document.getElementById('peeoName').value = localStorage.getItem('mdm_peeo_name');
       if (localStorage.getItem('mdm_udise_code')) document.getElementById('udiseCode').value = localStorage.getItem('mdm_udise_code');
-      if (localStorage.getItem('mdm_cook_count')) cookCount.value = localStorage.getItem('mdm_cook_count');
+      if (localStorage.getItem('mdm_head_name')) document.getElementById('headName').value = localStorage.getItem('mdm_head_name');
+      if (localStorage.getItem('mdm_head_mobile')) document.getElementById('headMobile').value = localStorage.getItem('mdm_head_mobile');
+      if (localStorage.getItem('mdm_incharge_name')) document.getElementById('inchargeName').value = localStorage.getItem('mdm_incharge_name');
+      if (localStorage.getItem('mdm_incharge_mobile')) document.getElementById('inchargeMobile').value = localStorage.getItem('mdm_incharge_mobile');
+      if (localStorage.getItem('mdm_peeo_mobile')) document.getElementById('peeoMobile').value = localStorage.getItem('mdm_peeo_mobile');
 
-      if (localStorage.getItem('mdm_rate_15')) rateCook15.value = localStorage.getItem('mdm_rate_15');
-      if (localStorage.getItem('mdm_rate_68')) rateCook68.value = localStorage.getItem('mdm_rate_68');
+      if (localStorage.getItem('mdm_bank_name')) document.getElementById('bankName').value = localStorage.getItem('mdm_bank_name');
+      if (localStorage.getItem('mdm_ifsc_code')) document.getElementById('ifscCode').value = localStorage.getItem('mdm_ifsc_code');
+      if (localStorage.getItem('mdm_account_no')) document.getElementById('accountNo').value = localStorage.getItem('mdm_account_no');
 
-      if (localStorage.getItem('mdm_open_wheat')) document.getElementById('openWheat').value = localStorage.getItem('mdm_open_wheat');
-      if (localStorage.getItem('mdm_open_rice')) document.getElementById('openRice').value = localStorage.getItem('mdm_open_rice');
-      if (localStorage.getItem('mdm_open_cooking')) document.getElementById('openCooking').value = localStorage.getItem('mdm_open_cooking');
-      if (localStorage.getItem('mdm_open_cook_honor')) document.getElementById('openCookHonor').value = localStorage.getItem('mdm_open_cook_honor');
-      if (localStorage.getItem('mdm_open_milk')) document.getElementById('openMilk').value = localStorage.getItem('mdm_open_milk');
-      if (localStorage.getItem('mdm_open_sugar')) document.getElementById('openSugar').value = localStorage.getItem('mdm_open_sugar');
-      if (localStorage.getItem('mdm_open_sugar_cash')) document.getElementById('openSugarCash').value = localStorage.getItem('mdm_open_sugar_cash');
-      if (localStorage.getItem('mdm_open_gas_cash')) document.getElementById('openGasCash').value = localStorage.getItem('mdm_open_gas_cash');
+      if (localStorage.getItem('mdm_rate_cook_bv')) document.getElementById('rateCookBv').value = localStorage.getItem('mdm_rate_cook_bv');
+      if (localStorage.getItem('mdm_rate_cook_15')) document.getElementById('rateCook15').value = localStorage.getItem('mdm_rate_cook_15');
+      if (localStorage.getItem('mdm_rate_cook_68')) document.getElementById('rateCook68').value = localStorage.getItem('mdm_rate_cook_68');
 
-      if (localStorage.getItem('mdm_rcv_wheat')) document.getElementById('rcvWheat').value = localStorage.getItem('mdm_rcv_wheat');
-      if (localStorage.getItem('mdm_rcv_rice')) document.getElementById('rcvRice').value = localStorage.getItem('mdm_rcv_rice');
-      if (localStorage.getItem('mdm_rcv_cooking')) document.getElementById('rcvCooking').value = localStorage.getItem('mdm_rcv_cooking');
-      if (localStorage.getItem('mdm_rcv_cook_honor')) document.getElementById('rcvCookHonor').value = localStorage.getItem('mdm_rcv_cook_honor');
-      if (localStorage.getItem('mdm_rcv_milk')) document.getElementById('rcvMilk').value = localStorage.getItem('mdm_rcv_milk');
-      if (localStorage.getItem('mdm_rcv_sugar')) document.getElementById('rcvSugar').value = localStorage.getItem('mdm_rcv_sugar');
-      if (localStorage.getItem('mdm_rcv_sugar_cash')) document.getElementById('rcvSugarCash').value = localStorage.getItem('mdm_rcv_sugar_cash');
-      if (localStorage.getItem('mdm_rcv_gas_cash')) document.getElementById('rcvGasCash').value = localStorage.getItem('mdm_rcv_gas_cash');
+      const savedMeta = JSON.parse(localStorage.getItem(getMonthMetaKey()) || 'null');
 
-      if (localStorage.getItem('mdm_actual_cook_spend')) actualCookSpend.value = localStorage.getItem('mdm_actual_cook_spend');
-      if (localStorage.getItem('mdm_actual_milk_spend')) actualMilkSpend.value = localStorage.getItem('mdm_actual_milk_spend');
-      if (localStorage.getItem('mdm_actual_sugar_spend')) actualSugarSpend.value = localStorage.getItem('mdm_actual_sugar_spend');
-      if (localStorage.getItem('mdm_actual_gas_cyl')) actualGasCylinders.value = localStorage.getItem('mdm_actual_gas_cyl');
-      if (localStorage.getItem('mdm_actual_gas_spend')) actualGasSpend.value = localStorage.getItem('mdm_actual_gas_spend');
+      if (savedMeta) {
+        document.getElementById('dispatchNo').value = savedMeta.dispatchNo ?? '';
+        document.getElementById('dispatchDate').value = savedMeta.dispatchDate ?? '';
+        document.getElementById('enrBv').value = savedMeta.enrBv ?? 0;
+        document.getElementById('enr15').value = savedMeta.enr15 ?? 0;
+        document.getElementById('enr68').value = savedMeta.enr68 ?? 0;
+
+        document.getElementById('cookName1').value = savedMeta.cookName1 ?? '';
+        document.getElementById('cookGender1').value = savedMeta.cookGender1 ?? 'महिला';
+        document.getElementById('cookPay1').value = savedMeta.cookPay1 ?? 2467;
+        document.getElementById('cookName2').value = savedMeta.cookName2 ?? '';
+        document.getElementById('cookGender2').value = savedMeta.cookGender2 ?? 'महिला';
+        document.getElementById('cookPay2').value = savedMeta.cookPay2 ?? 0;
+        document.getElementById('cookName3').value = savedMeta.cookName3 ?? '';
+        document.getElementById('cookGender3').value = savedMeta.cookGender3 ?? 'महिला';
+        document.getElementById('cookPay3').value = savedMeta.cookPay3 ?? 0;
+
+        document.getElementById('openWheatBv').value = savedMeta.openWheatBv ?? 0;
+        document.getElementById('openWheat15').value = savedMeta.openWheat15 ?? 0;
+        document.getElementById('openWheat68').value = savedMeta.openWheat68 ?? 0;
+        document.getElementById('openRiceBv').value = savedMeta.openRiceBv ?? 0;
+        document.getElementById('openRice15').value = savedMeta.openRice15 ?? 0;
+        document.getElementById('openRice68').value = savedMeta.openRice68 ?? 0;
+
+        document.getElementById('openCookBv').value = savedMeta.openCookBv ?? 0;
+        document.getElementById('openCook15').value = savedMeta.openCook15 ?? 0;
+        document.getElementById('openCook68').value = savedMeta.openCook68 ?? 0;
+
+        document.getElementById('openMilkBv').value = savedMeta.openMilkBv ?? 0;
+        document.getElementById('openMilk15').value = savedMeta.openMilk15 ?? 0;
+        document.getElementById('openMilk68').value = savedMeta.openMilk68 ?? 0;
+
+        document.getElementById('openSugarBv').value = savedMeta.openSugarBv ?? 0;
+        document.getElementById('openSugar15').value = savedMeta.openSugar15 ?? 0;
+        document.getElementById('openSugar68').value = savedMeta.openSugar68 ?? 0;
+
+        document.getElementById('openCookHonor').value = savedMeta.openCookHonor ?? 0;
+        document.getElementById('openMilkHelperCash').value = savedMeta.openMilkHelperCash ?? 0;
+        document.getElementById('openSugarCash').value = savedMeta.openSugarCash ?? 0;
+        document.getElementById('openGasCash').value = savedMeta.openGasCash ?? 0;
+        document.getElementById('openMmeCash').value = savedMeta.openMmeCash ?? 0;
+
+        document.getElementById('rcvWheatBv').value = savedMeta.rcvWheatBv ?? 0;
+        document.getElementById('rcvWheat15').value = savedMeta.rcvWheat15 ?? 0;
+        document.getElementById('rcvWheat68').value = savedMeta.rcvWheat68 ?? 0;
+        document.getElementById('rcvRiceBv').value = savedMeta.rcvRiceBv ?? 0;
+        document.getElementById('rcvRice15').value = savedMeta.rcvRice15 ?? 0;
+        document.getElementById('rcvRice68').value = savedMeta.rcvRice68 ?? 0;
+
+        document.getElementById('rcvCookBv').value = savedMeta.rcvCookBv ?? 0;
+        document.getElementById('rcvCook15').value = savedMeta.rcvCook15 ?? 0;
+        document.getElementById('rcvCook68').value = savedMeta.rcvCook68 ?? 0;
+
+        document.getElementById('rcvMilkBv').value = savedMeta.rcvMilkBv ?? 0;
+        document.getElementById('rcvMilk15').value = savedMeta.rcvMilk15 ?? 0;
+        document.getElementById('rcvMilk68').value = savedMeta.rcvMilk68 ?? 0;
+
+        document.getElementById('rcvSugarBv').value = savedMeta.rcvSugarBv ?? 0;
+        document.getElementById('rcvSugar15').value = savedMeta.rcvSugar15 ?? 0;
+        document.getElementById('rcvSugar68').value = savedMeta.rcvSugar68 ?? 0;
+
+        document.getElementById('rcvCookHonor').value = savedMeta.rcvCookHonor ?? 0;
+        document.getElementById('rcvMilkHelperCash').value = savedMeta.rcvMilkHelperCash ?? 0;
+        document.getElementById('rcvSugarCash').value = savedMeta.rcvSugarCash ?? 0;
+        document.getElementById('rcvGasCash').value = savedMeta.rcvGasCash ?? 0;
+        document.getElementById('rcvMmeCash').value = savedMeta.rcvMmeCash ?? 0;
+
+        document.getElementById('actualSugarSpend').value = savedMeta.actualSugarSpend ?? 0;
+        document.getElementById('actualGasSpend').value = savedMeta.actualGasSpend ?? 0;
+        document.getElementById('actualMmeSpend').value = savedMeta.actualMmeSpend ?? 0;
+        document.getElementById('actualMilkSpend').value = savedMeta.actualMilkSpend ?? 500;
+      } else {
+        const curY = parseInt(yearSelect.value);
+        const curM = parseInt(monthSelect.value);
+        let prevM = curM - 1;
+        let prevY = curY;
+        if (prevM < 0) {
+          prevM = 11;
+          prevY = curY - 1;
+        }
+
+        const prevClosingKey = `mdm_closing_anupgarh_${prevY}_${prevM}`;
+        const prevClosing = JSON.parse(localStorage.getItem(prevClosingKey) || 'null');
+
+        if (prevClosing) {
+          document.getElementById('openWheatBv').value = prevClosing.wheatCloseBv || 0;
+          document.getElementById('openWheat15').value = prevClosing.wheatClose15 || 0;
+          document.getElementById('openWheat68').value = prevClosing.wheatClose68 || 0;
+          document.getElementById('openRiceBv').value = prevClosing.riceCloseBv || 0;
+          document.getElementById('openRice15').value = prevClosing.riceClose15 || 0;
+          document.getElementById('openRice68').value = prevClosing.riceClose68 || 0;
+
+          document.getElementById('openCookBv').value = prevClosing.cookBalBv || 0;
+          document.getElementById('openCook15').value = prevClosing.cookBal15 || 0;
+          document.getElementById('openCook68').value = prevClosing.cookBal68 || 0;
+
+          document.getElementById('openMilkBv').value = prevClosing.milkCloseBv || 0;
+          document.getElementById('openMilk15').value = prevClosing.milkClose15 || 0;
+          document.getElementById('openMilk68').value = prevClosing.milkClose68 || 0;
+
+          document.getElementById('openSugarBv').value = prevClosing.sugarCloseBv || 0;
+          document.getElementById('openSugar15').value = prevClosing.sugarClose15 || 0;
+          document.getElementById('openSugar68').value = prevClosing.sugarClose68 || 0;
+
+          document.getElementById('openCookHonor').value = prevClosing.cookHonorBal || 0;
+          document.getElementById('openMilkHelperCash').value = prevClosing.milkHelperBal || 0;
+          document.getElementById('openSugarCash').value = prevClosing.sugarCashBal || 0;
+          document.getElementById('openGasCash').value = prevClosing.gasCashBal || 0;
+          document.getElementById('openMmeCash').value = prevClosing.mmeCashBal || 0;
+        } else {
+          document.querySelectorAll('#openWheatBv, #openWheat15, #openWheat68, #openRiceBv, #openRice15, #openRice68, #openCookBv, #openCook15, #openCook68, #openMilkBv, #openMilk15, #openMilk68, #openSugarBv, #openSugar15, #openSugar68, #openCookHonor, #openMilkHelperCash, #openSugarCash, #openGasCash, #openMmeCash').forEach(el => el.value = 0);
+        }
+
+        document.querySelectorAll('#rcvWheatBv, #rcvWheat15, #rcvWheat68, #rcvRiceBv, #rcvRice15, #rcvRice68, #rcvCookBv, #rcvCook15, #rcvCook68, #rcvMilkBv, #rcvMilk15, #rcvMilk68, #rcvSugarBv, #rcvSugar15, #rcvSugar68, #rcvCookHonor, #rcvMilkHelperCash, #rcvSugarCash, #rcvGasCash, #rcvMmeCash, #actualSugarSpend, #actualGasSpend, #actualMmeSpend').forEach(el => el.value = 0);
+        document.getElementById('actualMilkSpend').value = 500;
+      }
     }
 
     function calculateMonthTotals() {
       const year = parseInt(yearSelect.value);
       const month = parseInt(monthSelect.value);
 
-      let totalDaysWorked = 0;
-      let total15 = 0;
-      let total68 = 0;
+      let daysWorkedBv = 0, daysWorked15 = 0, daysWorked68 = 0;
+      let totalBv = 0, total15 = 0, total68 = 0;
 
-      let wheatTotalKg = 0;
-      let riceTotalKg = 0;
+      let wheatBv = 0, wheat15 = 0, wheat68 = 0;
+      let riceBv = 0, rice15 = 0, rice68 = 0;
 
       document.querySelectorAll('.in-15').forEach(inp => {
         const day = parseInt(inp.getAttribute('data-day'));
+        const vbv = parseInt(document.querySelector(`.in-bv[data-day="${day}"]`).value) || 0;
         const v15 = parseInt(inp.value) || 0;
         const v68 = parseInt(document.querySelector(`.in-68[data-day="${day}"]`).value) || 0;
 
-        if (v15 > 0 || v68 > 0) {
-          totalDaysWorked++;
-          total15 += v15;
-          total68 += v68;
+        if (vbv > 0) { daysWorkedBv++; totalBv += vbv; }
+        if (v15 > 0) { daysWorked15++; total15 += v15; }
+        if (v68 > 0) { daysWorked68++; total68 += v68; }
 
+        if (vbv > 0 || v15 > 0 || v68 > 0) {
           const dayOfWeek = new Date(year, month, day).getDay();
-          const dayConsumption = (v15 * 0.100) + (v68 * 0.150);
-
           if (dayOfWeek === 2 || dayOfWeek === 4) {
-            riceTotalKg += dayConsumption;
+            riceBv += (vbv * 0.100);
+            rice15 += (v15 * 0.100);
+            rice68 += (v68 * 0.150);
           } else {
-            wheatTotalKg += dayConsumption;
+            wheatBv += (vbv * 0.100);
+            wheat15 += (v15 * 0.100);
+            wheat68 += (v68 * 0.150);
           }
         }
       });
 
-      const r15 = parseFloat(rateCook15.value) || 5.45;
-      const r68 = parseFloat(rateCook68.value) || 8.17;
-
-      const cookCost15 = total15 * r15;
-      const cookCost68 = total68 * r68;
+      const rbv = parseFloat(document.getElementById('rateCookBv').value) || 6.78;
+      const r15 = parseFloat(document.getElementById('rateCook15').value) || 6.78;
+      const r68 = parseFloat(document.getElementById('rateCook68').value) || 10.17;
 
       return {
-        daysWorked: totalDaysWorked,
-        stud15: total15,
-        stud68: total68,
-        studTotal: total15 + total68,
+        daysBv: daysWorkedBv, days15: daysWorked15, days68: daysWorked68,
+        studBv: totalBv, stud15: total15, stud68: total68,
 
-        wheatUsedKg: wheatTotalKg,
-        riceUsedKg: riceTotalKg,
-        food15Kg: total15 * 0.100,
-        food68Kg: total68 * 0.150,
-        foodTotalKg: (total15 * 0.100) + (total68 * 0.150),
+        wheatBv, wheat15, wheat68,
+        riceBv, rice15, rice68,
 
-        rate15: r15,
-        rate68: r68,
-        cookCost15: cookCost15,
-        cookCost68: cookCost68,
-        cookCostTotal: cookCost15 + cookCost68,
+        rateBv: rbv, rate15: r15, rate68: r68,
+        cookCostBv: totalBv * rbv,
+        cookCost15: total15 * r15,
+        cookCost68: total68 * r68,
+        cookCostTotal: (totalBv * rbv) + (total15 * r15) + (total68 * r68),
 
+        milkBvKg: totalBv * 0.015,
         milk15Kg: total15 * 0.015,
         milk68Kg: total68 * 0.020,
-        milkTotalKg: (total15 * 0.015) + (total68 * 0.020),
 
+        sugarBvKg: totalBv * 0.0084,
         sugar15Kg: total15 * 0.0084,
-        sugar68Kg: total68 * 0.0102,
-        sugarTotalKg: (total15 * 0.0084) + (total68 * 0.0102),
-
-        vol15Ltr: total15 * 0.150,
-        vol68Ltr: total68 * 0.200,
-        volTotalLtr: (total15 * 0.150) + (total68 * 0.200)
+        sugar68Kg: total68 * 0.0102
       };
     }
 
@@ -826,166 +1132,235 @@
       autoSaveData();
       const totals = calculateMonthTotals();
 
+      const session = document.getElementById('sessionName').value || "2026-27";
       const school = document.getElementById('schoolName').value || "राजकीय विद्यालय";
-      const peeo = document.getElementById('peeoBlock').value || "-";
+      const block = "अनूपगढ़";
+      const peeo = document.getElementById('peeoName').value || "-";
       const udise = document.getElementById('udiseCode').value || "-----------";
       const monthStr = `${monthNames[monthSelect.value]} ${yearSelect.value}`;
-      const cookCountVal = parseInt(cookCount.value) || 1;
 
-      // ==================== POPULATE PAGE 1: MDM UC ====================
-      document.getElementById('printSchool1').innerText = `विद्यालय: ${school}`;
-      document.getElementById('printPeeoBlock1').innerText = `PEEO/ब्लॉक: ${peeo}`;
-      document.getElementById('printUdise1').innerText = `UDISE: ${udise}`;
-      document.getElementById('printMonth1').innerText = `माह: ${monthStr}`;
+      const head = document.getElementById('headName').value || "-";
+      const headMob = document.getElementById('headMobile').value || "-";
+      const incharge = document.getElementById('inchargeName').value || "-";
+      const inchargeMob = document.getElementById('inchargeMobile').value || "-";
+      const peeoMob = document.getElementById('peeoMobile').value || "-";
 
-      document.getElementById('p1Days15').innerText = totals.daysWorked;
-      document.getElementById('p1Days68').innerText = totals.daysWorked;
-      document.getElementById('p1DaysTotal').innerText = totals.daysWorked;
+      const dispNo = document.getElementById('dispatchNo').value || "-";
+      const dispDt = document.getElementById('dispatchDate').value || "-";
 
-      document.getElementById('p1Stud15').innerText = totals.stud15;
-      document.getElementById('p1Stud68').innerText = totals.stud68;
-      document.getElementById('p1StudTotal').innerText = totals.studTotal;
+      // Session Updates
+      safeSetText('pSession1', session);
+      safeSetText('pSession2', session);
 
-      document.getElementById('p1Food15').innerText = totals.food15Kg.toFixed(2) + ' Kg';
-      document.getElementById('p1Food68').innerText = totals.food68Kg.toFixed(2) + ' Kg';
-      document.getElementById('p1FoodTotal').innerText = totals.foodTotalKg.toFixed(2) + ' Kg';
+      // ==================== PAGE 1 ====================
+      safeSetText('pSchool', school);
+      safeSetText('pBlock', block);
+      safeSetText('pPeeo', peeo);
+      safeSetText('pUdise', udise);
+      safeSetText('pMonth', monthStr);
+      safeSetText('pDispatch', `${dispNo} / ${dispDt}`);
+      safeSetText('pHead', `${head} (${headMob})`);
+      safeSetText('pIncharge', `${incharge} (${inchargeMob})`);
 
-      document.getElementById('p1Rate15Disp').innerText = '₹' + totals.rate15.toFixed(2);
-      document.getElementById('p1Rate68Disp').innerText = '₹' + totals.rate68.toFixed(2);
+      safeSetText('pEnrBv', document.getElementById('enrBv').value || '0');
+      safeSetText('pEnr15', document.getElementById('enr15').value || '0');
+      safeSetText('pEnr68', document.getElementById('enr68').value || '0');
 
-      document.getElementById('p1CookCost15').innerText = '₹' + totals.cookCost15.toFixed(2);
-      document.getElementById('p1CookCost68').innerText = '₹' + totals.cookCost68.toFixed(2);
-      document.getElementById('p1CookCostTotal').innerText = '₹' + totals.cookCostTotal.toFixed(2);
+      safeSetText('pBankName', document.getElementById('bankName').value || "-");
+      safeSetText('pIfsc', document.getElementById('ifscCode').value || "-");
+      safeSetText('pAccount', document.getElementById('accountNo').value || "-");
 
-      // Grain Stocks
-      const openWheat = parseFloat(document.getElementById('openWheat').value) || 0;
-      const rcvWheat = parseFloat(document.getElementById('rcvWheat').value) || 0;
-      const totWheat = openWheat + rcvWheat;
+      // Food Availability
+      safeSetText('pDaysBv', totals.daysBv);
+      safeSetText('pDays15', totals.days15);
+      safeSetText('pDays68', totals.days68);
+      safeSetText('pStudBv', totals.studBv);
+      safeSetText('pStud15', totals.stud15);
+      safeSetText('pStud68', totals.stud68);
 
-      const openRice = parseFloat(document.getElementById('openRice').value) || 0;
-      const rcvRice = parseFloat(document.getElementById('rcvRice').value) || 0;
-      const totRice = openRice + rcvRice;
+      // Cook Helpers
+      safeSetText('pCookN1', document.getElementById('cookName1').value || "-");
+      safeSetText('pCookG1', document.getElementById('cookGender1').value);
+      const cp1 = parseFloat(document.getElementById('cookPay1').value) || 0;
+      safeSetText('pCookP1', cp1 > 0 ? `₹${cp1.toFixed(2)}` : "-");
 
-      document.getElementById('p1WheatOpen').innerText = openWheat.toFixed(2);
-      document.getElementById('p1WheatRcv').innerText = rcvWheat.toFixed(2);
-      document.getElementById('p1WheatTotalStock').innerText = totWheat.toFixed(2);
-      document.getElementById('p1WheatUsed').innerText = totals.wheatUsedKg.toFixed(2);
-      document.getElementById('p1WheatClose').innerText = (totWheat - totals.wheatUsedKg).toFixed(2);
+      safeSetText('pCookN2', document.getElementById('cookName2').value || "-");
+      safeSetText('pCookG2', document.getElementById('cookGender2').value);
+      const cp2 = parseFloat(document.getElementById('cookPay2').value) || 0;
+      safeSetText('pCookP2', cp2 > 0 ? `₹${cp2.toFixed(2)}` : "-");
 
-      document.getElementById('p1RiceOpen').innerText = openRice.toFixed(2);
-      document.getElementById('p1RiceRcv').innerText = rcvRice.toFixed(2);
-      document.getElementById('p1RiceTotalStock').innerText = totRice.toFixed(2);
-      document.getElementById('p1RiceUsed').innerText = totals.riceUsedKg.toFixed(2);
-      document.getElementById('p1RiceClose').innerText = (totRice - totals.riceUsedKg).toFixed(2);
+      safeSetText('pCookN3', document.getElementById('cookName3').value || "-");
+      safeSetText('pCookG3', document.getElementById('cookGender3').value);
+      const cp3 = parseFloat(document.getElementById('cookPay3').value) || 0;
+      safeSetText('pCookP3', cp3 > 0 ? `₹${cp3.toFixed(2)}` : "-");
 
-      // Financials (Cooking Conversion)
-      const openCook = parseFloat(document.getElementById('openCooking').value) || 0;
-      const rcvCook = parseFloat(document.getElementById('rcvCooking').value) || 0;
-      const totCook = openCook + rcvCook;
-      const spendCook = totals.cookCostTotal;
+      const totalCookSpend = cp1 + cp2 + cp3;
+      const openCookHonor = parseFloat(document.getElementById('openCookHonor').value) || 0;
+      const rcvCookHonor = parseFloat(document.getElementById('rcvCookHonor').value) || 0;
+      const closeCookHonor = (openCookHonor + rcvCookHonor) - totalCookSpend;
 
-      document.getElementById('p1FinCookOpen').innerText = '₹' + openCook.toFixed(2);
-      document.getElementById('p1FinCookRcv').innerText = '₹' + rcvCook.toFixed(2);
-      document.getElementById('p1FinCookTotal').innerText = '₹' + totCook.toFixed(2);
-      document.getElementById('p1FinCookSpend').innerText = '₹' + spendCook.toFixed(2);
-      document.getElementById('p1FinCookBal').innerText = '₹' + (totCook - spendCook).toFixed(2);
+      safeSetText('pCookFinOpen', `₹${openCookHonor.toFixed(2)}`);
+      safeSetText('pCookFinRcv', `₹${rcvCookHonor.toFixed(2)}`);
+      safeSetText('pCookFinSpend', `₹${totalCookSpend.toFixed(2)}`);
+      safeSetText('pCookFinClose', `₹${closeCookHonor.toFixed(2)}`);
 
-      // Financials (Cook Honorarium)
-      const openHonor = parseFloat(document.getElementById('openCookHonor').value) || 0;
-      const rcvHonor = parseFloat(document.getElementById('rcvCookHonor').value) || 0;
-      const totHonor = openHonor + rcvHonor;
-      const actualSpendHonor = parseFloat(actualCookSpend.value) || 0;
+      // 6. Food Grain Consumption
+      function setStockRow(prefix, openVal, rcvVal, usedVal) {
+        const o = parseFloat(openVal) || 0;
+        const r = parseFloat(rcvVal) || 0;
+        const u = usedVal;
+        const c = (o + r) - u;
+        safeSetText(`p${prefix}Open`, o.toFixed(2));
+        safeSetText(`p${prefix}Rcv`, r.toFixed(2));
+        safeSetText(`p${prefix}Used`, u.toFixed(2));
+        safeSetText(`p${prefix}Close`, c.toFixed(2));
+        return { o, r, u, c };
+      }
 
-      document.getElementById('p1CookCountDisp').innerText = cookCountVal;
-      document.getElementById('p1FinHonorOpen').innerText = '₹' + openHonor.toFixed(2);
-      document.getElementById('p1FinHonorRcv').innerText = '₹' + rcvHonor.toFixed(2);
-      document.getElementById('p1FinHonorTotal').innerText = '₹' + totHonor.toFixed(2);
-      document.getElementById('p1FinHonorSpend').innerText = '₹' + actualSpendHonor.toFixed(2);
-      document.getElementById('p1FinHonorBal').innerText = '₹' + (totHonor - actualSpendHonor).toFixed(2);
+      const swbv = setStockRow('WBv', document.getElementById('openWheatBv').value, document.getElementById('rcvWheatBv').value, totals.wheatBv);
+      const srbv = setStockRow('RBv', document.getElementById('openRiceBv').value, document.getElementById('rcvRiceBv').value, totals.riceBv);
+      const sw15 = setStockRow('W15', document.getElementById('openWheat15').value, document.getElementById('rcvWheat15').value, totals.wheat15);
+      const sr15 = setStockRow('R15', document.getElementById('openRice15').value, document.getElementById('rcvRice15').value, totals.rice15);
+      const sw68 = setStockRow('W68', document.getElementById('openWheat68').value, document.getElementById('rcvWheat68').value, totals.wheat68);
+      const sr68 = setStockRow('R68', document.getElementById('openRice68').value, document.getElementById('rcvRice68').value, totals.rice68);
 
-      // ==================== POPULATE PAGE 2: MILK SCHEME UC ====================
-      document.getElementById('printSchool2').innerText = `विद्यालय: ${school}`;
-      document.getElementById('printPeeoBlock2').innerText = `PEEO/ब्लॉक: ${peeo}`;
-      document.getElementById('printUdise2').innerText = `UDISE: ${udise}`;
-      document.getElementById('printMonth2').innerText = `माह: ${monthStr}`;
+      // 7. Cooking Conversion
+      safeSetText('pDispRateBv', totals.rateBv.toFixed(2));
+      safeSetText('pDispRate15', totals.rate15.toFixed(2));
+      safeSetText('pDispRate68', totals.rate68.toFixed(2));
 
-      document.getElementById('p2Days15').innerText = totals.daysWorked;
-      document.getElementById('p2Days68').innerText = totals.daysWorked;
-      document.getElementById('p2DaysTotal').innerText = totals.daysWorked;
+      function setCookRow(prefix, openVal, rcvVal, spendVal) {
+        const o = parseFloat(openVal) || 0;
+        const r = parseFloat(rcvVal) || 0;
+        const s = spendVal;
+        const c = (o + r) - s;
+        safeSetText(`p${prefix}Open`, `₹${o.toFixed(2)}`);
+        safeSetText(`p${prefix}Rcv`, `₹${r.toFixed(2)}`);
+        safeSetText(`p${prefix}Spend`, `₹${s.toFixed(2)}`);
+        safeSetText(`p${prefix}Close`, `₹${c.toFixed(2)}`);
+        return { o, r, s, c };
+      }
 
-      document.getElementById('p2Stud15').innerText = totals.stud15;
-      document.getElementById('p2Stud68').innerText = totals.stud68;
-      document.getElementById('p2StudTotal').innerText = totals.studTotal;
+      const cbv = setCookRow('CBv', document.getElementById('openCookBv').value, document.getElementById('rcvCookBv').value, totals.cookCostBv);
+      const c15 = setCookRow('C15', document.getElementById('openCook15').value, document.getElementById('rcvCook15').value, totals.cookCost15);
+      const c68 = setCookRow('C68', document.getElementById('openCook68').value, document.getElementById('rcvCook68').value, totals.cookCost68);
 
-      document.getElementById('p2Milk15').innerText = totals.milk15Kg.toFixed(3) + ' Kg';
-      document.getElementById('p2Milk68').innerText = totals.milk68Kg.toFixed(3) + ' Kg';
-      document.getElementById('p2MilkTotal').innerText = totals.milkTotalKg.toFixed(3) + ' Kg';
+      safeSetText('pCOpenTot', `₹${(cbv.o + c15.o + c68.o).toFixed(2)}`);
+      safeSetText('pCRcvTot', `₹${(cbv.r + c15.r + c68.r).toFixed(2)}`);
+      safeSetText('pCSpendTot', `₹${totals.cookCostTotal.toFixed(2)}`);
+      safeSetText('pCCloseTot', `₹${(cbv.c + c15.c + c68.c).toFixed(2)}`);
 
-      document.getElementById('p2Sugar15').innerText = totals.sugar15Kg.toFixed(3) + ' Kg';
-      document.getElementById('p2Sugar68').innerText = totals.sugar68Kg.toFixed(3) + ' Kg';
-      document.getElementById('p2SugarTotal').innerText = totals.sugarTotalKg.toFixed(3) + ' Kg';
+      // Page 1 Signatures Mobiles
+      safeSetText('pSignMobInc', `मो०नं०: ${inchargeMob}`);
+      safeSetText('pSignMobHead', `मो०नं०: ${headMob}`);
+      safeSetText('pSignMobPeeo', `मो०नं०: ${peeoMob}`);
 
-      document.getElementById('p2Vol15').innerText = totals.vol15Ltr.toFixed(1) + ' Ltr';
-      document.getElementById('p2Vol68').innerText = totals.vol68Ltr.toFixed(1) + ' Ltr';
-      document.getElementById('p2VolTotal').innerText = totals.volTotalLtr.toFixed(1) + ' Ltr';
+      // ==================== PAGE 2: MILK SCHEME ====================
+      safeSetText('p2School', school);
+      safeSetText('p2Block', block);
+      safeSetText('p2Peeo', peeo);
+      safeSetText('p2Udise', udise);
+      safeSetText('p2Month', monthStr);
+      safeSetText('p2Date', dispDt);
 
-      // 1. Milk Powder Physical Stock
-      const openMilk = parseFloat(document.getElementById('openMilk').value) || 0;
-      const rcvMilk = parseFloat(document.getElementById('rcvMilk').value) || 0;
-      const totMilk = openMilk + rcvMilk;
+      safeSetText('pMDayBv', totals.daysBv);
+      safeSetText('pMDay15', totals.days15);
+      safeSetText('pMDay68', totals.days68);
+      safeSetText('pMStudBv', totals.studBv);
+      safeSetText('pMStud15', totals.stud15);
+      safeSetText('pMStud68', totals.stud68);
 
-      document.getElementById('p2MilkOpen').innerText = openMilk.toFixed(3);
-      document.getElementById('p2MilkRcv').innerText = rcvMilk.toFixed(3);
-      document.getElementById('p2MilkTotalStock').innerText = totMilk.toFixed(3);
-      document.getElementById('p2MilkUsed').innerText = totals.milkTotalKg.toFixed(3);
-      document.getElementById('p2MilkClose').innerText = (totMilk - totals.milkTotalKg).toFixed(3);
+      // 9. Milk Powder Stock (Kg)
+      function setMilkRow(prefix, openVal, rcvVal, usedVal) {
+        const o = parseFloat(openVal) || 0;
+        const r = parseFloat(rcvVal) || 0;
+        const u = usedVal;
+        const c = (o + r) - u;
+        safeSetText(`p${prefix}Open`, o.toFixed(3));
+        safeSetText(`p${prefix}Rcv`, r.toFixed(3));
+        safeSetText(`p${prefix}Used`, u.toFixed(3));
+        safeSetText(`p${prefix}Close`, c.toFixed(3));
+        return { o, r, u, c };
+      }
 
-      // 2. Sugar Physical Stock
-      const openSugar = parseFloat(document.getElementById('openSugar').value) || 0;
-      const rcvSugar = parseFloat(document.getElementById('rcvSugar').value) || 0;
-      const totSugar = openSugar + rcvSugar;
+      const mpbv = setMilkRow('MPBv', document.getElementById('openMilkBv').value, document.getElementById('rcvMilkBv').value, totals.milkBvKg);
+      const mp15 = setMilkRow('MP15', document.getElementById('openMilk15').value, document.getElementById('rcvMilk15').value, totals.milk15Kg);
+      const mp68 = setMilkRow('MP68', document.getElementById('openMilk68').value, document.getElementById('rcvMilk68').value, totals.milk68Kg);
 
-      document.getElementById('p2SugarOpen').innerText = openSugar.toFixed(3);
-      document.getElementById('p2SugarRcv').innerText = rcvSugar.toFixed(3);
-      document.getElementById('p2SugarTotalStock').innerText = totSugar.toFixed(3);
-      document.getElementById('p2SugarUsed').innerText = totals.sugarTotalKg.toFixed(3);
-      document.getElementById('p2SugarClose').innerText = (totSugar - totals.sugarTotalKg).toFixed(3);
+      safeSetText('pMPOpenTot', (mpbv.o + mp15.o + mp68.o).toFixed(3));
+      safeSetText('pMPRcvTot', (mpbv.r + mp15.r + mp68.r).toFixed(3));
+      safeSetText('pMPUsedTot', (totals.milkBvKg + totals.milk15Kg + totals.milk68Kg).toFixed(3));
+      safeSetText('pMPCloseTot', (mpbv.c + mp15.c + mp68.c).toFixed(3));
 
-      // 3. Sugar Financial Cash
-      const openSugarCash = parseFloat(document.getElementById('openSugarCash').value) || 0;
-      const rcvSugarCash = parseFloat(document.getElementById('rcvSugarCash').value) || 0;
-      const totSugarCash = openSugarCash + rcvSugarCash;
-      const spendSugarCash = parseFloat(actualSugarSpend.value) || 0;
+      // 10. Sugar Stock (Kg)
+      const spbv = setMilkRow('SPBv', document.getElementById('openSugarBv').value, document.getElementById('rcvSugarBv').value, totals.sugarBvKg);
+      const sp15 = setMilkRow('SP15', document.getElementById('openSugar15').value, document.getElementById('rcvSugar15').value, totals.sugar15Kg);
+      const sp68 = setMilkRow('SP68', document.getElementById('openSugar68').value, document.getElementById('rcvSugar68').value, totals.sugar68Kg);
 
-      document.getElementById('p2SugarCashOpen').innerText = '₹' + openSugarCash.toFixed(2);
-      document.getElementById('p2SugarCashRcv').innerText = '₹' + rcvSugarCash.toFixed(2);
-      document.getElementById('p2SugarCashTotal').innerText = '₹' + totSugarCash.toFixed(2);
-      document.getElementById('p2SugarCashSpend').innerText = '₹' + spendSugarCash.toFixed(2);
-      document.getElementById('p2SugarCashClose').innerText = '₹' + (totSugarCash - spendSugarCash).toFixed(2);
+      safeSetText('pSPOpenTot', (spbv.o + sp15.o + sp68.o).toFixed(3));
+      safeSetText('pSPRcvTot', (spbv.r + sp15.r + sp68.r).toFixed(3));
+      safeSetText('pSPUsedTot', (totals.sugarBvKg + totals.sugar15Kg + totals.sugar68Kg).toFixed(3));
+      safeSetText('pSPCloseTot', (spbv.c + sp15.c + sp68.c).toFixed(3));
 
-      // 4. Gas Cylinder Financial Cash & Physical Display
-      const openGasCash = parseFloat(document.getElementById('openGasCash').value) || 0;
-      const rcvGasCash = parseFloat(document.getElementById('rcvGasCash').value) || 0;
-      const totGasCash = openGasCash + rcvGasCash;
-      const spendGasCash = parseFloat(actualGasSpend.value) || 0;
-      const gasCylText = actualGasCylinders.value || '1';
+      // 11 to 14. Financials
+      function setCashRow(prefix, openVal, rcvVal, spendVal) {
+        const o = parseFloat(openVal) || 0;
+        const r = parseFloat(rcvVal) || 0;
+        const s = parseFloat(spendVal) || 0;
+        const c = (o + r) - s;
+        safeSetText(`pFCashOpen${prefix}`, `₹${o.toFixed(2)}`);
+        safeSetText(`pFCashRcv${prefix}`, `₹${r.toFixed(2)}`);
+        safeSetText(`pFCashSpend${prefix}`, `₹${s.toFixed(2)}`);
+        safeSetText(`pFCashClose${prefix}`, `₹${c.toFixed(2)}`);
+        return { o, r, s, c };
+      }
 
-      document.getElementById('p2GasCylDisp').innerText = gasCylText;
-      document.getElementById('p2GasCashOpen').innerText = '₹' + openGasCash.toFixed(2);
-      document.getElementById('p2GasCashRcv').innerText = '₹' + rcvGasCash.toFixed(2);
-      document.getElementById('p2GasCashTotal').innerText = '₹' + totGasCash.toFixed(2);
-      document.getElementById('p2GasCashSpend').innerText = '₹' + spendGasCash.toFixed(2);
-      document.getElementById('p2GasCashClose').innerText = '₹' + (totGasCash - spendGasCash).toFixed(2);
+      const fSugar = setCashRow('Sugar', document.getElementById('openSugarCash').value, document.getElementById('rcvSugarCash').value, document.getElementById('actualSugarSpend').value);
+      const fMilkH = setCashRow('MilkH', document.getElementById('openMilkHelperCash').value, document.getElementById('rcvMilkHelperCash').value, document.getElementById('actualMilkSpend').value);
+      const fMme = setCashRow('Mme', document.getElementById('openMmeCash').value, document.getElementById('rcvMmeCash').value, document.getElementById('actualMmeSpend').value);
+      const fGas = setCashRow('Gas', document.getElementById('openGasCash').value, document.getElementById('rcvGasCash').value, document.getElementById('actualGasSpend').value);
 
-      // 5. Milk Cook Honorarium
-      const actualMilkSpendVal = parseFloat(actualMilkSpend.value) || 0;
-      document.getElementById('p2MilkHonorPaid').innerText = actualMilkSpendVal.toFixed(2);
+      // Page 2 Signatures Mobiles
+      safeSetText('p2SignMobInc', `मो०नं०: ${inchargeMob}`);
+      safeSetText('p2SignMobHead', `मो०नं०: ${headMob}`);
+      safeSetText('p2SignMobPeeo', `मो०नं०: ${peeoMob}`);
+
+      // Save for auto carry-forward
+      const closingToSave = {
+        wheatCloseBv: swbv.c.toFixed(2),
+        wheatClose15: sw15.c.toFixed(2),
+        wheatClose68: sw68.c.toFixed(2),
+        riceCloseBv: srbv.c.toFixed(2),
+        riceClose15: sr15.c.toFixed(2),
+        riceClose68: sr68.c.toFixed(2),
+
+        cookBalBv: cbv.c.toFixed(2),
+        cookBal15: c15.c.toFixed(2),
+        cookBal68: c68.c.toFixed(2),
+
+        milkCloseBv: mpbv.c.toFixed(3),
+        milkClose15: mp15.c.toFixed(3),
+        milkClose68: mp68.c.toFixed(3),
+
+        sugarCloseBv: spbv.c.toFixed(3),
+        sugarClose15: sp15.c.toFixed(3),
+        sugarClose68: sp68.c.toFixed(3),
+
+        cookHonorBal: closeCookHonor.toFixed(2),
+        milkHelperBal: fMilkH.c.toFixed(2),
+        sugarCashBal: fSugar.c.toFixed(2),
+        gasCashBal: fGas.c.toFixed(2),
+        mmeCashBal: fMme.c.toFixed(2)
+      };
+
+      const curClosingKey = `mdm_closing_anupgarh_${yearSelect.value}_${monthSelect.value}`;
+      localStorage.setItem(curClosingKey, JSON.stringify(closingToSave));
 
       // Screen Preview
       screenUcWrapper.innerHTML = `
         <div class="screen-preview">
           <div style="font-size:15px; font-weight:bold; color:#0284c7; margin-bottom:12px; text-align:center;">
-            ✓ सम्पूर्ण मासिक UC तैयार है! (नीचे पूर्वावलोकन देखें)
+            ✓ अनूपगढ़ ब्लॉक प्रारूप अनुसार सम्पूर्ण मासिक UC तैयार है! (नीचे पूर्वावलोकन देखें)
           </div>
           ${ucContainer.innerHTML}
         </div>
@@ -996,20 +1371,28 @@
 
     document.getElementById('btnSaveData').onclick = () => {
       autoSaveData();
-      alert("✓ समस्त विवरण, चीनी/गैस मद एवं स्टॉक सुरक्षित कर दिया गया है।");
+      generateUC();
+      alert("✓ समस्त विवरण, स्टॉक एवं क्लोजिंग बैलेंस सुरक्षित कर दिए गए हैं (अगले माह स्वतः कैरी हेतु तैयार)।");
     };
 
     document.getElementById('btnGenerateUC').onclick = generateUC;
 
+    // 🌟 100% वर्किंग डायरेक्ट प्रिंट ट्रिगर (फ़ाइल 6 की तरह बिना किसी रुकावट के)
     document.getElementById('btnPrintUC').onclick = () => {
       generateUC();
       window.print();
     };
 
-    monthSelect.onchange = renderMonthGrid;
-    yearSelect.onchange = renderMonthGrid;
+    function onMonthOrYearChange() {
+      loadMonthDataWithAutoCarry();
+      renderMonthGrid();
+      screenUcWrapper.innerHTML = '';
+    }
 
-    loadSavedSchoolDetails();
+    monthSelect.onchange = onMonthOrYearChange;
+    yearSelect.onchange = onMonthOrYearChange;
+
+    loadMonthDataWithAutoCarry();
     renderMonthGrid();
   </script>
 </body>
